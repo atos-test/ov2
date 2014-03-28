@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/underscore-min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/correosTheme.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.iscrollview.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.iscrollview-pull.css"/>
+        <link rel="stylesheet" type="text/css" href="css/extendedIcons/jqm-icon-pack-fa.css"/>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            $(document).on('pageinit',"#loginPage", Login.initialize );
+        </script>
+        <div data-role="page" id="loginPage" data-theme="a" data-scroll="true">
+            <div data-theme="a" data-role="header" data-position="fixed" data-tap-toggle="false">
+                <h3>
+                    Login
+                </h3>
+            </div>    
+    <!-- INICIO CONTENIDO -->
+            <div data-role="content" data-theme="a" >
+                <div data-role="content" data-theme="a">      
+                    <div id="contenedorLogin" data-role="collapsible" data-content-theme="a" data-collapsed="false" data-collapsed-icon="play" and data-expanded-icon="play" >
+                        <h3 class="headerCollapsibleLogin">
+                            <label>Introduzca sus datos</label>
+                        </h3>
+                        <fieldset class="ui-grid-a">
+                            <div class="ui-block-a" id="blockUsuarioLogin">
+                                <label>Usuario</label>
+                            </div>
+                            <div class="ui-block-b" id="blockInputUsuarioLogin">
+                                <input type="text" id="inputUsuarioLogin" data-mini="true">
+                            </div>
+                            <div class="ui-block-a" id="blockPasswordLogin">
+                                <label>Contraseña</label>
+                            </div>
+                            <div class="ui-block-b">
+                                <input type="password" id="inputPasswordLogin" data-mini="true"/>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div> 
+            </div>
+
+            <div data-theme="a" data-role="footer" data-position="fixed" data-tap-toggle="false">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a id="btnAceptar" data-role="button" data-icon="check" data-transition="slide" data-inline="true" data-mini="true">Aceptar</a></li>                        
+                        <li><a id="btnAtrasLogin" data-role="button" data-icon="back" data-inline="true" data-mini="true">Atrás</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>

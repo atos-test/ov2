@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<chojaProductos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.org/">
+	<Producto>
+		<cProducto>
+			<NombreProducto>Burofax</NombreProducto>
+			<PrecioProducto>10</PrecioProducto>
+			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
+			<Ambito>Nacional e Internacional</Ambito>
+			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
+		</cProducto>
+		<cProducto>
+			<NombreProducto>Carta digital</NombreProducto>
+			<PrecioProducto>10</PrecioProducto>
+			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
+			<Ambito>Nacional e Internacional</Ambito>
+			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
+		</cProducto>
+		<cProducto>
+			<NombreProducto>Certificados</NombreProducto>
+			<PrecioProducto>10</PrecioProducto>
+			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
+			<Ambito>Nacional e Internacional</Ambito>
+			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
+		</cProducto>
+		<cProducto>
+			<NombreProducto>Filatelia</NombreProducto>
+			<PrecioProducto>10</PrecioProducto>
+			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
+			<Ambito>Nacional e Internacional</Ambito>
+			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
+		</cProducto>
+		<cProducto>
+			<NombreProducto>Notificaciones</NombreProducto>
+			<PrecioProducto>10</PrecioProducto>
+			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
+			<Ambito>Nacional e Internacional</Ambito>
+			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
+		</cProducto>
+		<cProducto>
+			<NombreProducto>Paquete azul</NombreProducto>
+			<PrecioProducto>10</PrecioProducto>
+			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
+			<Ambito>Nacional e Internacional</Ambito>
+			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
+		</cProducto>
+		<cProducto>
+			<NombreProducto>Paquete económico internacional</NombreProducto>
+			<PrecioProducto>10</PrecioProducto>
+			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
+			<Ambito>Nacional e Internacional</Ambito>
+			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
+		</cProducto>
+		<cProducto>
+			<NombreProducto>Paquete internacional prioritario</NombreProducto>
+			<PrecioProducto>10</PrecioProducto>
+			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
+			<Ambito>Nacional e Internacional</Ambito>
+			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
+		</cProducto>
+		<cProducto>
+			<NombreProducto>Postal 48/72</NombreProducto>
+			<PrecioProducto>10</PrecioProducto>
+			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
+			<Ambito>Nacional e Internacional</Ambito>
+			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
+		</cProducto>
+		<cProducto>
+			<NombreProducto>Postal digital</NombreProducto>
+			<PrecioProducto>10</PrecioProducto>
+			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
+			<Ambito>Nacional e Internacional</Ambito>
+			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
+		</cProducto>
+		<cProducto>
+			<NombreProducto>Postal Exprés Internacional</NombreProducto>
+			<PrecioProducto>10</PrecioProducto>
+			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
+			<Ambito>Nacional e Internacional</Ambito>
+			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
+		</cProducto>
+		<cProducto>
+			<NombreProducto>Postal Exprés Nacional</NombreProducto>
+			<PrecioProducto>10</PrecioProducto>
+			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
+			<Ambito>Nacional e Internacional</Ambito>
+			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
+		</cProducto>
+		<cProducto>
+			<NombreProducto>Teleben</NombreProducto>
+			<PrecioProducto>10</PrecioProducto>
+			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
+			<Ambito>Nacional e Internacional</Ambito>
+			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
+		</cProducto>
+		<cProducto>
+			<NombreProducto>Telegrama</NombreProducto>
+			<PrecioProducto>10</PrecioProducto>
+			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
+			<Ambito>Nacional e Internacional</Ambito>
+			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
+		</cProducto>
+		<cProducto>
+			<NombreProducto>Tu Sello</NombreProducto>
+			<PrecioProducto>10</PrecioProducto>
+			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
+			<Ambito>Nacional e Internacional</Ambito>
+			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
+		</Producto>
+	</Producto>
+</chojaProductos>
