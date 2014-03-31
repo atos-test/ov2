@@ -134,3 +134,8 @@ h1 {
 .ui-radio{
     width: 50%;
 }
+
+.fixed {
+    position:fixed;
+    top:50px;
+}

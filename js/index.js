@@ -32,15 +32,20 @@ var app = {
         var template = _.template($('#productList-template').html(), {productList : products});
         $('#productosList').html(template);
         $("#productosList").listview().listview('refresh');
+    });
     },
 
     showList: function(){
+        $("#btnDetalle").removeClass("ui-btn-active");
         $("#detalle").hide("slide");
+        $("#btnLista").addClass("ui-btn-active");
         $("#productosList").show("slide");
     },
 
     showDetail: function(){
+        $("#btnLista").removeClass("ui-btn-active");
         $("#productosList").hide("slide");
+        $("#btnDetalle").addClass("ui-btn-active");
         $("#detalle").show("slide");
     },
     
@@ -68,6 +73,14 @@ var app = {
 
         $("#btnDetalle").on("vclick",function(){
             self.showDetail();
+        });
+
+        $("#listPage").on("swipeleft", function(){
+            self.showDetail();
+        });
+
+        $("#listPage").on("swiperight", function(){
+            self.showList();
         });
 
         document.addEventListener('deviceready', function(){
