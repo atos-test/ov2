@@ -96,15 +96,17 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
+.barraSuperior{
+    height: 20px;
+}
+
 .nombreProducto {
-    color:red;
     font-size: 13px !important;
-    float: left;
-    margin-left: 2% !important;
+    font-weight: bold !important;
 }
 
 .imagenProducto{
-    float: right;
+    float: left;
 }
 
 .precioProducto {
@@ -121,4 +123,14 @@ h1 {
 
 .contenedorProducto{
     padding: 0 !important;
+}
+
+/***************RADIO BUTTON**************************/
+.ui-radio input {
+    height: 0px;
+    width: 0px; 
+}​​​​​
+
+.ui-radio{
+    width: 50%;
 }

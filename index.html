@@ -26,9 +26,6 @@
     </head>
     <body>
         <script type="text/javascript">
-            /*$(document).ready(function() {
-                app.initialize();
-            });*/
             $(document).on('pageinit',"#listPage", app.initialize );
         </script>
 <!-- LISTPAGE -->
@@ -39,10 +36,21 @@
                 </h3>
             </div>    
     <!-- INICIO CONTENIDO -->
-            <div data-role="content" data-theme="e" >     
-                    <ul id="productosList" data-role="listview" data-inset="true">
-                       
+            <div data-role="content" data-theme="e" >
+                <div data-role="navbar">
+                    <ul>
+                        <li><a id="btnLista" class="ui-btn-active ui-state-persist">Lista</a></li>
+                        <li><a id="btnDetalle">Detalle</a></li>
                     </ul>
+                </div>
+                
+                <ul id="productosList" data-role="listview" data-inset="true">
+                   
+                </ul>
+
+                <div id="detalle">
+                    DETALLE
+                </div>
             </div>
 
 
@@ -50,20 +58,14 @@
                 <% _.each(productList, function(producto) {%>
                     <li data-icon="false">
                         <a id="<%=(producto.Login)=="true"?"loginNecesario" : "" %>" class="contenedorProducto">
-                            <div id="titulo">
-                                <label class="nombreProducto"><%= producto.NombreProducto %></label>
-                                <img class="imagenProducto" src="<%= producto.Imagen %>" height="42" width="42"></img>
-                            
-                                <br>
-                                <label class="precioProducto"><%= producto.PrecioProducto %> </label>
+                            <div id="imgTitulo">
+                                <img class="imagenProducto" src="<%= producto.Imagen %>" height="64" width="64"></img>
                             </div>
-                            <div>
-                                <br>
-                                <p><strong><%= producto.DescripcionProducto %></strong></p>
+                            <div id="infoProducto">
+                                <label class="nombreProducto"><%= producto.NombreProducto %></label>
+                                <label class="precioProducto"><%= producto.PrecioProducto %></label>
                                 <label class="plazoProducto">Plazo de entrega: <%= producto.PlazoEntrega %></label>
                             </div>
-                            
-                            
                         </a>
                     </li>
                 <% }); %>
@@ -74,7 +76,7 @@
         <div data-role="page" id="loginPage" data-theme="e" data-scroll="true">
             <div data-theme="e" data-role="header" data-position="fixed" data-tap-toggle="false">
                 <h3>
-                    Login!
+                    Login
                 </h3>
             </div>    
     <!-- INICIO CONTENIDO -->

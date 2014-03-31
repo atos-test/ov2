@@ -26,9 +26,8 @@ var app = {
 
     refreshView: function(){
         var self = app;
-        console.log("refreshView");
 
-        $("#contenedorLogin").collapsible({collapsed: false});
+        $("#detalle").hide();
 
         var products = app.hojaProductos.chojaProductos.Producto.cProducto;
 
@@ -56,6 +55,15 @@ var app = {
             console.log("Pulsado Aceptar");
         });
 
+        $("#btnLista").on("vclick",function(){
+            $("#detalle").hide("slide");
+            $("#productosList").show("slide");
+        });
+
+        $("#btnDetalle").on("vclick",function(){
+            $("#productosList").hide("slide");
+            $("#detalle").show("slide");
+        });
 
         document.addEventListener('deviceready', function(){
             console.log("Received Event: deviceready");
