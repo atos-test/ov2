@@ -124,7 +124,7 @@ h1 {
     padding: 0 !important;
 }
 
-/***************RADIO BUTTON**************************/
+/* INICIO ALBERTO */
 .ui-radio input {
     height: 0px;
     width: 0px; 
@@ -138,7 +138,9 @@ h1 {
     position:fixed;
     top:50px;
 }
+/* FIN ALBERTO */
 
+/* INICIO DANIEL */
 .custom-corners .ui-bar {
   -webkit-border-top-left-radius: inherit;
   border-top-left-radius: inherit;
@@ -168,3 +170,5 @@ h1 {
 .titulo-servicio {
 	
 }
+
+/* FIN DANIEL */
