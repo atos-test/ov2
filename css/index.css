@@ -134,6 +134,11 @@ h1 {
     width: 50%;
 }
 
+.fixed {
+    position:fixed;
+    top:50px;
+}
+
 .custom-corners .ui-bar {
   -webkit-border-top-left-radius: inherit;
   border-top-left-radius: inherit;
