@@ -32,7 +32,6 @@ var app = {
         var template = _.template($('#productList-template').html(), {productList : products});
         $('#productosList').html(template);
         $("#productosList").listview().listview('refresh');
-    });
     },
 
     showList: function(){
