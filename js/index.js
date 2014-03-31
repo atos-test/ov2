@@ -20,8 +20,6 @@ var app = {
             console.log(self.hojaProductos);
             console.log("Cargados datos de hojaProductos");
         });
-        //console.log("URL: => ",window.location.toString());
-        //console.log("hoja-->",self.hojaProductos.chojaProductos);
     },
 
     refreshView: function(){
@@ -36,6 +34,15 @@ var app = {
         $("#productosList").listview().listview('refresh');
     },
 
+    showList: function(){
+        $("#detalle").hide("slide");
+        $("#productosList").show("slide");
+    },
+
+    showDetail: function(){
+        $("#productosList").hide("slide");
+        $("#detalle").show("slide");
+    },
     
     bindEvents: function() {
         var self = app;
@@ -56,13 +63,11 @@ var app = {
         });
 
         $("#btnLista").on("vclick",function(){
-            $("#detalle").hide("slide");
-            $("#productosList").show("slide");
+            self.showList();
         });
 
         $("#btnDetalle").on("vclick",function(){
-            $("#productosList").hide("slide");
-            $("#detalle").show("slide");
+            self.showDetail();
         });
 
         document.addEventListener('deviceready', function(){
