@@ -176,7 +176,8 @@ h1 {
 }
 
 .descripcion-servicio{
-	padding: 1em 1em 1em 1em;
+	padding-top: 0;
+	padding-bottom:0;
 }
 
 .grid-caracteristicas{
