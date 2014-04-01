@@ -32,6 +32,20 @@ var app = {
         var template = _.template($('#productList-template').html(), {productList : products});
         $('#productosList').html(template);
         $("#productosList").listview().listview('refresh');
+
+        var navpos = $('#nav').offset();
+        console.log(navpos);
+
+        console.log("Header-->",$("#headerCorreos").offset());
+        $(window).bind('scroll', function() {
+            if ($(window).scrollTop() > 10) {
+                $('#nav').addClass('fixed');
+            }
+            else {
+                $('#nav').removeClass('fixed');
+            }
+        });
+        
     },
 
     showList: function(){

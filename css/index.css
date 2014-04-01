@@ -136,7 +136,12 @@ h1 {
 
 .fixed {
     position:fixed;
-    top:50px;
+    z-index: 1;
+    top: 6%;
+}
+
+.lista{
+    opacity: 0;
 }
 /* FIN ALBERTO */
 
