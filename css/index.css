@@ -170,8 +170,12 @@ h1 {
 	color: #fff;
 }
 
-.titulo-servicio {
-	
+.descripcion-servicio{
+	padding: 1em 1em 1em 1em;
+}
+
+.grid-caracteristicas{
+	padding-top: 1em;
 }
 
 /* FIN DANIEL */
