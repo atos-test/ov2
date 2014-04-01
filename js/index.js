@@ -39,10 +39,10 @@ var app = {
         console.log("Header-->",$("#headerCorreos").offset());
         $(window).bind('scroll', function() {
             if ($(window).scrollTop() > 10) {
-                $('#nav').addClass('fixed');
+                $('#nav').addClass('fixedClass');
             }
             else {
-                $('#nav').removeClass('fixed');
+                $('#nav').removeClass('fixedClass');
             }
         });
         

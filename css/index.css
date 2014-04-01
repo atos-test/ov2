@@ -126,26 +126,23 @@ h1 {
 }
 
 /* INICIO ALBERTO */
-.ui-radio input {
-    height: 0px;
-    width: 0px; 
-}​​​​​
+
+
+.fixedClass{
+    position: fixed;
+    z-index: 1;
+}
 
 .ui-radio{
     width: 50%;
 }
 
-.contentMain{
-    padding: 0 1em 1em 1em;
-}
-
-.fixed {
-    position:fixed;
-    z-index: 1;
-}
-
 .lista{
     opacity: 0;
+}
+.ui-radio input {
+    height: 0px;
+    width: 0px; 
 }
 /* FIN ALBERTO */
 
