@@ -20,7 +20,6 @@ body {
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
 	font-size:12px;
-	font-size:100%;
     height:100%;
     margin:0px;
     padding:0px;
@@ -135,10 +134,13 @@ h1 {
     width: 50%;
 }
 
+.contentMain{
+    padding: 0 1em 1em 1em;
+}
+
 .fixed {
     position:fixed;
     z-index: 1;
-    top: 6%;
 }
 
 .lista{
@@ -166,21 +168,15 @@ h1 {
 	background-size: 100%;
 	padding-top: 5%;
 	padding-left: 5%;
-	font-size: 1.8em;
-	min-height: 3.6em;
-	line-height:1.2;
+	font-size: 9vw;
+	min-height: 21vh;
+	line-height:1.3;
 	text-shadow: none;
 	text-transform: uppercase;
-	font-weight: bold;
-	color: #fff;
 }
 
-.descripcion-servicio{
-	padding: 1em 1em 1em 1em;
-}
-
-.grid-caracteristicas{
-	padding-top: 1em;
+.titulo-servicio {
+	
 }
 
 /* FIN DANIEL */
