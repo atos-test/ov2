@@ -27,24 +27,29 @@
             $(document).on('pageinit',"#listPage", app.initialize );
         </script>
 <!-- LISTPAGE -->
-        <div data-role="page" id="listPage" data-theme="e" data-scroll="true">
+        <div data-role="page" id="listPage" data-theme="e">
             <div data-theme="e" data-role="header" data-position="fixed" data-tap-toggle="false">
                 <h3>
                     Correos
                 </h3>
             </div>    
     <!-- INICIO CONTENIDO -->
-            <div data-role="content" data-theme="e" id="content" class="contentMain">
-                <div data-role="navbar" id="nav" data-theme="e">
-                    <ul>
-                        <li><a id="btnLista" class="ui-btn-active ui-state-persist">Lista</a></li>
-                        <li><a id="btnDetalle">Detalle</a></li>
+            <div data-role="content" data-theme="e" id="content">
+                
+                    <div data-role="navbar" id="nav" data-theme="e">
+                    
+                        <ul>
+                            <li><a id="btnLista" class="ui-btn-active ui-state-persist">Lista</a></li>
+                            <li><a id="btnDetalle">Detalle</a></li>
+                        </ul>
+                    </div>
+                <div data-scroll="true">
+                    <ul id="productosList" data-role="listview" data-inset="true">
+                   
                     </ul>
+
                 </div>
                 
-                <ul id="productosList" data-role="listview" data-inset="true">
-                   
-                </ul>
 
                 <div id="detalle">
                     <div class="ui-corner-all custom-corners">
