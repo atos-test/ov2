@@ -605,7 +605,7 @@
 }
 .ui-body-e,
 .ui-overlay-e {
-	border: 1px solid #FFD300 /*{e-body-border}*/;
+	border: 1px 1px 0 1px solid #FFD300 /*{e-body-border}*/;
 	color: #00457d /*{e-body-color}*/;
 	text-shadow: 0 /*{e-body-shadow-x}*/ 1px /*{e-body-shadow-y}*/ 0 /*{e-body-shadow-radius}*/ #fff /*{e-body-shadow-color}*/;
 	background: #fefbef; /*{e-body-background-color}*/;

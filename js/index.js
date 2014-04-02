@@ -33,18 +33,11 @@ var app = {
         $('#productosList').html(template);
         $("#productosList").listview().listview('refresh');
 
-        var navpos = $('#nav').offset();
-        console.log(navpos);
-
-        console.log("Header-->",$("#headerCorreos").offset());
-        $(window).bind('scroll', function() {
-            if ($(window).scrollTop() > 10) {
-                $('#nav').addClass('fixedClass');
-            }
-            else {
-                $('#nav').removeClass('fixedClass');
-            }
-        });
+        var alturaDocument = $( document ).height();
+        console.log("Altura document-->", alturaDocument);
+        var alturaContainer = (alturaDocument - alturaDocument*22.5/100) + "px";
+        console.log("Altura container-->", alturaContainer);
+        $("#container2").height(alturaContainer);
         
     },
 
@@ -52,12 +45,12 @@ var app = {
         $("#btnDetalle").removeClass("ui-btn-active");
         $("#detalle").hide("slide");
         $("#btnLista").addClass("ui-btn-active");
-        $("#productosList").show("slide");
+        $("#container1").show("slide");
     },
 
     showDetail: function(){
         $("#btnLista").removeClass("ui-btn-active");
-        $("#productosList").hide("slide");
+        $("#container1").hide("slide");
         $("#btnDetalle").addClass("ui-btn-active");
         $("#detalle").show("slide");
     },
