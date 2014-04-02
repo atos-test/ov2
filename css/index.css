@@ -219,4 +219,11 @@ h1 {
 	font-size:0.75em;
 }
 
+.btn-detalle{
+	border-width:0;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(255, 211, 0,1);
+}
+
 /* FIN DANIEL */
