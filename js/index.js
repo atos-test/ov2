@@ -25,7 +25,7 @@ var app = {
     refreshView: function(){
         var self = app;
 
-        $("#detalle").hide();
+        $("#containerDetalle1").hide();
 
         var products = app.hojaProductos.chojaProductos.Producto.cProducto;
 
@@ -38,12 +38,13 @@ var app = {
         var alturaContainer = (alturaDocument - alturaDocument*22.5/100) + "px";
         console.log("Altura container-->", alturaContainer);
         $("#container2").height(alturaContainer);
+        $("#containerDetalle2").height(alturaContainer);
         
     },
 
     showList: function(){
         $("#btnDetalle").removeClass("ui-btn-active");
-        $("#detalle").hide("slide");
+        $("#containerDetalle1").hide("slide");
         $("#btnLista").addClass("ui-btn-active");
         $("#container1").show("slide");
     },
@@ -52,7 +53,7 @@ var app = {
         $("#btnLista").removeClass("ui-btn-active");
         $("#container1").hide("slide");
         $("#btnDetalle").addClass("ui-btn-active");
-        $("#detalle").show("slide");
+        $("#containerDetalle1").show("slide");
     },
     
     bindEvents: function() {
