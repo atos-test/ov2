@@ -173,9 +173,9 @@ h1 {
   border-bottom-right-radius: inherit;
 }
 
-.fondo-correos-1 {
-	background: url('../img/480x240-correos-fondo.jpg');
-	background-size: 100%;
+.detalle {
+	/*background: url('../img/480x240-correos-fondo.jpg');
+	background-size: 100%;*/
 	padding-top: 5%;
 	padding-left: 5%;
 	font-size: 1.8em;
@@ -187,13 +187,55 @@ h1 {
 	color: #fff;
 }
 
+.fondo-tusello {
+	background: url('../img/480x240-correos-fondo3.jpg');
+	background-size: 100%;
+}
+
+.fondo-paqinteco {
+	background: url('../img/480x240-correos-fondo2.jpg');
+	background-size: 100%;
+}
+
+.fondo-burofax {
+	background: url('../img/480x240-correos-fondo.jpg');
+	background-size: 100%;
+}
+
 .descripcion-servicio{
 	padding-top: 0;
 	padding-bottom:0;
 }
 
 .grid-caracteristicas {
-	
+	margin-top: 1em;
+	margin-bottom: 1em;
+	color: #000;
+	font-weight: bold;
+	font-size: 0.9em;
+	text-shadow: none;
+}
+
+.label-titulos{
+	font-size: 0.75em;
+	margin:0;
+}
+
+.label-datos{
+	font-size: 1.1em;
+	margin:0;
+}
+
+.texto-servicio{
+	height: 9.6em;
+	font-size:0.75em;
+}
+
+.btn-detalle{
+	border-width:0;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(255, 211, 0,1);
 }
 
 /* FIN DANIEL */
