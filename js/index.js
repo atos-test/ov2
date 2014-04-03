@@ -43,6 +43,8 @@ var app = {
     },
 
     showList: function(){
+		$("#slider-vista").val( "on" );
+		$("#slider-vista").slider( "refresh" );
         $("#btnDetalle").removeClass("ui-btn-active");
         $("#containerDetalle1").hide("slide");
         $("#btnLista").addClass("ui-btn-active");
@@ -50,6 +52,8 @@ var app = {
     },
 
     showDetail: function(){
+		$("#slider-vista").val ("off");
+		$("#slider-vista").slider( "refresh" );
         $("#btnLista").removeClass("ui-btn-active");
         $("#container1").hide("slide");
         $("#btnDetalle").addClass("ui-btn-active");
@@ -77,6 +81,13 @@ var app = {
         $("#btnLista").on("vclick",function(){
             self.showList();
         });
+		
+		$("#slider-vista").change(function(){
+			if ($(this).val()=="on")
+				self.showList();
+			else
+				self.showDetail();
+		});
 
         $("#btnDetalle").on("vclick",function(){
             self.showDetail();

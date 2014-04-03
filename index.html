@@ -29,9 +29,16 @@
 <!-- LISTPAGE -->
         <div data-role="page" id="listPage" data-theme="e">
             <div data-theme="e" data-role="header" data-position="fixed" data-tap-toggle="false">
-                <h3>
-                    Correos
-                </h3>
+				<h3>
+						Correos
+				</h3>
+				
+				<div class="slider-vista">
+					<select name="slider-vista" id="slider-vista" data-role="slider" data-mini="true" data-theme="c">
+						<option value="off">Detalle</option>
+						<option value="on" selected="">Lista</option>
+					</select>
+				</div>
             </div>    
     <!-- INICIO CONTENIDO -->
             <div data-role="content" data-theme="e" id="content" data-role="true">
