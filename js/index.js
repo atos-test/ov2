@@ -31,6 +31,7 @@ var app = {
 
         var template = _.template($('#productList-template').html(), {productList : products});
         $('#productosList').html(template);
+        self.refreshGroups(products.length);
         $("#productosList").listview().listview('refresh');
 
         var alturaDocument = $( document ).height();
@@ -40,6 +41,14 @@ var app = {
         $("#container2").height(alturaContainer);
         $("#containerDetalle2").height(alturaContainer);
         
+    },
+
+    refreshGroups: function(total){
+        for (var i = 0; i<total; i++) {
+            var id= "#myIdGroup"+i;
+            console.log("id-->",id);
+             $(id).controlgroup().controlgroup("refresh");
+        };
     },
 
     showList: function(){

@@ -122,9 +122,7 @@ h1 {
     margin: -1em;
 }
 
-.contenedorProducto{
-    padding: 0 !important;
-}
+
 
 /* INICIO ALBERTO */
 
@@ -169,6 +167,39 @@ h1 {
     height: 0px;
     width: 0px; 
 }
+
+.ui-controlgroup-controls{
+    width: 100%;
+}
+
+.controlGroupClass{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.liControlGroupClass{
+    padding:0 !important;
+    /*border: 0 !important;*/
+}
+
+.contenedorProducto{
+    width: 75%;
+    padding: 0 !important;
+}
+
+.btnControlGroupLeft{
+    border-width: 0px !important;
+    -webkit-border-top-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    -webkit-border-bottom-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.btnControlGroupRight{
+    height: 42px !important;
+    border-width: 0px !important;
+}
+
 /* FIN ALBERTO */
 
 /* INICIO DANIEL */
