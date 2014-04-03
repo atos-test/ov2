@@ -138,19 +138,26 @@
             </div>
 
             <script type="text/template" id="productList-template" >
-                <% _.each(productList, function(producto) {%>
-                    <li data-icon="false">
-                        <a id="<%=(producto.Login)=="true"?"loginNecesario" : "" %>" class="contenedorProducto">
-                            <div id="imgTitulo">
-                                <img class="imagenProducto" src="<%= producto.Imagen %>" height="64" width="64"></img>
-                            </div>
-                            <div id="infoProducto">
-                                <label class="nombreProducto"><%= producto.NombreProducto %></label>
-                                <label class="precioProducto"><%= producto.PrecioProducto %></label>
-                                <label class="plazoProducto">Plazo de entrega: <%= producto.PlazoEntrega %></label>
-                            </div>
-                        </a>
+                <% _.each(productList, function(producto,index) {%>
+                    <%var idGroup="myIdGroup"+index; 
+                    var idInfo="info"+index%>
+                    <li data-icon="false" class="liControlGroupClass">
+                        <div id="<%=idGroup%>" data-role="controlgroup" data-type="horizontal" class="controlGroupClass ui-controlgroup ui-controlgroup-horizontal ui-corner-all">
+                            <a data-role="button" id="<%=(producto.Login)=="true"?"loginNecesario" : "" %>" class="contenedorProducto btnControlGroupLeft">
+                                <div id="imgTitulo">
+                                    <img class="imagenProducto" src="<%= producto.Imagen %>"></img>
+                                </div>
+                                <div id="infoProducto">
+                                    <label class="nombreProducto"><%= producto.NombreProducto %></label>
+                                    <label class="precioProducto"><%= producto.PrecioProducto %></label>
+                                    <label class="plazoProducto">Plazo de entrega: <%= producto.PlazoEntrega %></label>
+                                </div>
+                            </a>
+                            <a valor="<%=index%>" data-role="button" data-icon="info" data-iconpos="notext" class="btnControlGroupRight">Info</a>
+                        </div>
                     </li>
+
+                    
                 <% }); %>
             </script>
         </div>
