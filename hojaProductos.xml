@@ -2,6 +2,7 @@
 <chojaProductos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.org/">
 	<Producto>
 		<cProducto>
+			<id>prod1</id>
 			<NombreProducto>Burofax</NombreProducto>
 			<PrecioProducto>Desde 6,18 €</PrecioProducto>
 			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
@@ -12,6 +13,7 @@
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
+			<id>prod2</id>
 			<NombreProducto>Carta digital</NombreProducto>
 			<PrecioProducto>Desde 0,55 €</PrecioProducto>
 			<DescripcionProducto>Envía tus cartas, tanto ordinarias como certificadas, a cualquier lugar del mundo, desde tu ordenador, sin ningún desplazamiento y a cualquier hora. Correos las imprime, ensobra y deposita en el buzón del domicilio de su destinatario.</DescripcionProducto>
@@ -22,6 +24,7 @@
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
+			<id>prod3</id>
 			<NombreProducto>Certificados</NombreProducto>
 			<PrecioProducto>Desde 4,13 €</PrecioProducto>
 			<DescripcionProducto>Rapidez y eficacia en tus envíos con carácter urgente. Con total fiabilidad y confidencialidad. La entrega se realizará en el domicilio y bajo firma.
@@ -33,6 +36,7 @@
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
+			<id>prod4</id>
 			<NombreProducto>Filatelia</NombreProducto>
 			<PrecioProducto>Desde 1 €</PrecioProducto>
 			<DescripcionProducto>La filatelia es el arte de coleccionar sellos, pero incluye también el coleccionismo de otros objetos relacionados con el Correo y su historia (cartas, tarjetas, álbumes, matasellos,…). Se trata de una afición que comparten decenas de millones de personas en todo el mundo.</DescripcionProducto>
@@ -43,6 +47,7 @@
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
+			<id>prod5</id>
 			<NombreProducto>Notificaciones</NombreProducto>
 			<PrecioProducto>Desde 3,95 €</PrecioProducto>
 			<DescripcionProducto>Se trata de un servicio indicado exclusivamente para entidades administrativas y judiciales que quieran tener constancia de que se ha realizado la entrega de sus comunicaciones de carácter legal. Van certificadas y se realizan hasta dos intentos de entrega en domicilio.</DescripcionProducto>
@@ -53,6 +58,7 @@
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
+			<id>prod6</id>
 			<NombreProducto>Paquete azul</NombreProducto>
 			<PrecioProducto>Desde 6,50 €</PrecioProducto>
 			<DescripcionProducto>Envío de paquetes o documentos voluminosos a España y Andorra. Estos paquetes están registrados y se entregan bajo firma en el domicilio del destinatario.</DescripcionProducto>
@@ -63,6 +69,7 @@
 			<Login>false</Login>
 		</cProducto>
 		<cProducto>
+			<id>prod7</id>
 			<NombreProducto>Paquete económico internac.</NombreProducto>
 			<PrecioProducto>Desde 15,53 €</PrecioProducto>
 			<DescripcionProducto>Haz que tus envíos de paquetería sean lo más económicos con este servicio internacional adaptado a tus necesidades con posibilidad de seguimiento online y telefónico, aviso de recibo y mucho más.</DescripcionProducto>
@@ -73,6 +80,7 @@
 			<Login>false</Login>
 		</cProducto>
 		<cProducto>
+			<id>prod8</id>
 			<NombreProducto>Paquete internac. prioritario</NombreProducto>
 			<PrecioProducto>Desde 18,72€</PrecioProducto>
 			<DescripcionProducto>Haz que tus envíos internacionales lleguen cuanto antes gracias a este servicio preferente al extranjero de mercancías y objetos de hasta 30kg. Además van registrados individualmente y se entregan al destinatario bajo firma.</DescripcionProducto>
@@ -83,6 +91,7 @@
 			<Login>false</Login>
 		</cProducto>
 		<cProducto>
+			<id>prod9</id>
 			<NombreProducto>Postal 48/72</NombreProducto>
 			<PrecioProducto>Desde 4,54€</PrecioProducto>
 			<DescripcionProducto>Envío de paquetería con total cobertura en territorio nacional y Andorra. Está diseñado para satisfacer las demandas del mercado y muy especialmente las del sector del e-commerce.</DescripcionProducto>
@@ -93,6 +102,7 @@
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
+			<id>prod10</id>
 			<NombreProducto>Postal digital</NombreProducto>
 			<PrecioProducto>Desde 1,93 €</PrecioProducto>
 			<DescripcionProducto>Envía Tarjetas Postales con tus mejores imágenes a quién quieras. Desde tu ordenador, sin esperas ni desplazamientos, porque Correos las imprime y ensobra y las lleva hasta el buzón de su destinatario, esté donde esté.</DescripcionProducto>
@@ -103,6 +113,7 @@
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
+			<id>prod11</id>
 			<NombreProducto>Postal Exprés Internacional</NombreProducto>
 			<PrecioProducto>Desde 28,86€</PrecioProducto>
 			<DescripcionProducto>Envíos urgentes de paquetería para empresas con una amplia cobertura y unas garantías excepcionales. Puedes realizar el envío desde cualquier oficina de Correos a cualquier parte del mundo.</DescripcionProducto>
@@ -113,6 +124,7 @@
 			<Login>false</Login>
 		</cProducto>
 		<cProducto>
+			<id>prod12</id>
 			<NombreProducto>Postal Exprés Nacional</NombreProducto>
 			<PrecioProducto>Desde 13,67€</PrecioProducto>
 			<DescripcionProducto>Envío de paquetería para particulares y empresas con total cobertura en territorio nacional y Andorra. Puedes realizar el envío desde cualquier oficina de Correos e incluso preparar tus envíos desde el ordenador.</DescripcionProducto>
@@ -123,6 +135,7 @@
 			<Login>false</Login>
 		</cProducto>
 		<cProducto>
+			<id>prod13</id>
 			<NombreProducto>Teleben</NombreProducto>
 			<PrecioProducto>10</PrecioProducto>
 			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
@@ -133,6 +146,7 @@
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
+			<id>prod14</id>
 			<NombreProducto>Telegrama</NombreProducto>
 			<PrecioProducto>Desde 6,22 €</PrecioProducto>
 			<DescripcionProducto>El envío online reúne todas las características del telegrama tradicional, pero con la comodidad que conlleva internet. Mismo plazo de entrega e incluso misma validez legal que los enviados por teléfono o desde las oficinas.</DescripcionProducto>
@@ -143,6 +157,7 @@
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
+			<id>prod15</id>
 			<NombreProducto>Tu Sello</NombreProducto>
 			<PrecioProducto>Desde 9,25€</PrecioProducto>
 			<DescripcionProducto>Este servicio te permite transformar imágenes en sellos reales de Correos. Haga exclusivos sus envíos de marketing directo o sus comunicaciones personales. El diseño se envía de forma online.</DescripcionProducto>

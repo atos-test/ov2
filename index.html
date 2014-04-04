@@ -8,10 +8,10 @@
         <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
         <script type="text/javascript" src="js/underscore-min.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/login.js"></script>
         <script type="text/javascript" src="js/cargaXML.js"></script>
-        <script type="text/javascript" src="js/xml2json.js"></script>        
+        <script type="text/javascript" src="js/xml2json.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>        
         
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons.min.css" />
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
@@ -142,7 +142,7 @@
                     var idInfo="info"+index%>
                     <li data-icon="false" class="liControlGroupClass">
                         <div id="<%=idGroup%>" data-role="controlgroup" data-type="horizontal" class="controlGroupClass ui-controlgroup ui-controlgroup-horizontal ui-corner-all">
-                            <a data-role="button" id="<%=(producto.Login)=="true"?"loginNecesario" : "" %>" class="contenedorProducto btnControlGroupLeft">
+                            <a data-role="button" id="<%=(producto.id)%>" class=" <%=(producto.Login)=="true"?"loginNecesario" : "" %> contenedorProducto btnControlGroupLeft">
                                 <div id="imgTitulo">
                                     <img class="imagenProducto" src="<%= producto.Imagen %>"></img>
                                 </div>
@@ -152,42 +152,11 @@
                                     <label class="plazoProducto">Plazo de entrega: <%= producto.PlazoEntrega %></label>
                                 </div>
                             </a>
-                            <a valor="<%=index%>" data-role="button" data-icon="info" data-iconpos="notext" class="btnControlGroupRight ui-nodisc-icon">Info</a>
+                            <a valor="<%=index%>" data-role="button" data-icon="info" data-iconpos="notext" class="btnControlGroupRight ui-icon-carat-d ui-btn-icon-notext ui-nodisc-icon">Info</a>
                         </div>
                     </li>
-
-                    
                 <% }); %>
             </script>
-        </div>
-
-<!-- LOGIN PAGE -->
-        <div data-role="page" id="loginPage" data-theme="e" data-scroll="true">
-            <div data-theme="e" data-role="header" data-position="fixed" data-tap-toggle="false">
-                <h3>
-                    Login
-                </h3>
-            </div>    
-    <!-- INICIO CONTENIDO -->
-            <div data-role="content" data-theme="e" >    
-                <div data-role="fieldcontain">  
-                    <label class="etiqueta">Username:</label>  
-                    <input class="required" id="username" name="uid_r" type="text" >            
-                </div>  
-                <div data-role="fieldcontain">  
-                    <label class="etiqueta">Password:</label>  
-                    <input id="password" name="pwd_r" type="password">            
-                </div>  
-            </div>
-
-            <div data-theme="e" data-role="footer" data-position="fixed" data-tap-toggle="false">
-                <div data-role="navbar">
-                    <ul>
-                        <li><a id="btnAceptar" data-role="button" data-icon="check" data-inline="true" data-mini="true">Aceptar</a></li>                        
-                        <li><a id="btnAtrasLogin" data-role="button" data-icon="back" data-inline="true" data-mini="true">Atrás</a></li>
-                    </ul>
-                </div>
-            </div> 
         </div>
     </body>
 </html>

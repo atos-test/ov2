@@ -31,7 +31,7 @@ body {
 }
 
 .contentClass{
-    padding: 4px;
+    padding: 14px;
 }
 
 /* Portrait layout (default) */
@@ -205,6 +205,7 @@ h1 {
 }
 
 .btnControlGroupRight{
+    width: 7% !important;
     border-width: 0px !important;
     padding: 0 !important;
     margin: 22px 0 22px 0 !important; /*Alto div = 64; alto icono = 20; Restante = 44*/
