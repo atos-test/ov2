@@ -54,18 +54,14 @@ var app = {
     showList: function(){
 		$("#slider-vista").val( "on" );
 		$("#slider-vista").slider( "refresh" );
-        /*$("#btnDetalle").removeClass("ui-btn-active"); borrar una vez aceptado nuevo diseño 2-4-14*/
         $("#containerDetalle1").hide("slide");
-        /*$("#btnLista").addClass("ui-btn-active"); borrar una vez aceptado nuevo diseño 2-4-14*/
         $("#container1").show("slide");
     },
 
     showDetail: function(){
 		$("#slider-vista").val ("off");
 		$("#slider-vista").slider( "refresh" );
-        /*$("#btnLista").removeClass("ui-btn-active"); borrar una vez aceptado nuevo diseño 2-4-14*/
         $("#container1").hide("slide");
-        /*$("#btnDetalle").addClass("ui-btn-active"); borrar una vez aceptado nuevo diseño 2-4-14*/
         $("#containerDetalle1").show("slide");
     },
     
@@ -86,12 +82,6 @@ var app = {
         $("#btnAceptar").on("vclick", function(){
             console.log("Pulsado Aceptar");
         });
-
-		/* borrar una vez aceptado nuevo diseño 2-4-14
-        $("#btnLista").on("vclick",function(){
-            self.showList();
-        });
-		*/
 		
 		$("#slider-vista").change(function(){
 			if ($(this).val()=="on")
@@ -99,12 +89,6 @@ var app = {
 			else
 				self.showDetail();
 		});
-
-		/* borrar una vez aceptado nuevo diseño 2-4-14
-        $("#btnDetalle").on("vclick",function(){
-            self.showDetail();
-        });
-		*/
 
         $("#listPage").on("swipeleft", function(){
             self.showDetail();
