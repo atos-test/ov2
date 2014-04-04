@@ -46,8 +46,7 @@ var app = {
     refreshGroups: function(total){
         for (var i = 0; i<total; i++) {
             var id= "#myIdGroup"+i;
-            console.log("id-->",id);
-             $(id).controlgroup().controlgroup("refresh");
+            $(id).controlgroup().controlgroup("refresh");
         };
     },
 
@@ -73,9 +72,12 @@ var app = {
         var self = app;
         console.log("bindEvents");
 
-        $('a.contenedorProducto').on("vclick", function(){
+        $('a.loginNecesario').on("vclick", function(){
             console.log("Pulsado");
-            $.mobile.pageContainer.pagecontainer("change", "#loginPage", { transition: "slide", reverse: false });
+            var cod = $(this).attr("id");
+            Login.cod = cod;
+            $.mobile.pageContainer.pagecontainer("change", "login.html", { transition: "slide", reverse: false });
+            //$.mobile.changePage("login.html", { transition: "slide", reverse: false });
         });
 
         $("#btnAtrasLogin").on("vclick", function(){
