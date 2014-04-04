@@ -36,7 +36,7 @@ var app = {
 
         var alturaDocument = $( document ).height();
         console.log("Altura document-->", alturaDocument);
-        var alturaContainer = (alturaDocument - alturaDocument*21/100) + "px";
+        var alturaContainer = (alturaDocument - alturaDocument*11/100) + "px";
         console.log("Altura container-->", alturaContainer);
         $("#container2").height(alturaContainer);
         $("#containerDetalle2").height(alturaContainer);

@@ -41,7 +41,7 @@
 				</div>
             </div>    
     <!-- INICIO CONTENIDO -->
-            <div data-role="content" data-theme="e" id="content" data-role="true">
+            <div data-role="content" data-theme="e" id="content" data-role="true" class="contentClass">
                 
                 <!-- antiguo navbar para lista-detalle
 				<div data-role="navbar" id="nav" data-theme="e">
@@ -156,13 +156,13 @@
                                 <div id="imgTitulo">
                                     <img class="imagenProducto" src="<%= producto.Imagen %>"></img>
                                 </div>
-                                <div id="infoProducto">
+                                <div id="infoProducto" class="infoProducto">
                                     <label class="nombreProducto"><%= producto.NombreProducto %></label>
                                     <label class="precioProducto"><%= producto.PrecioProducto %></label>
                                     <label class="plazoProducto">Plazo de entrega: <%= producto.PlazoEntrega %></label>
                                 </div>
                             </a>
-                            <a valor="<%=index%>" data-role="button" data-icon="info" data-iconpos="notext" class="btnControlGroupRight">Info</a>
+                            <a valor="<%=index%>" data-role="button" data-icon="info" data-iconpos="notext" class="btnControlGroupRight ui-nodisc-icon">Info</a>
                         </div>
                     </li>
 
