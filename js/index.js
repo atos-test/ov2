@@ -40,6 +40,14 @@ var app = {
         console.log("Altura container-->", alturaContainer);
         $("#container2").height(alturaContainer);
         $("#containerDetalle2").height(alturaContainer);
+		
+		/* Calculamos la altura del bloque detalle (flechas, fondo y descripción) */
+		var alturaDetalle = 410;
+		var nbloques = Math.floor((alturaDocument-72)/alturaDetalle);
+		
+		/* Para la altura adaptable de los bloques de detalle de producto */
+		$(".detalle-block").height((alturaDocument-72)/nbloques);
+		console.log("nbloques-->", nbloques);
         
     },
 
