@@ -37,7 +37,6 @@ var app = {
 
         var alturaDocument = $( document ).height();
         var alturaContainer = (alturaDocument - alturaDocument*11/100) + "px";
-        $("#container2").height(alturaContainer);
         $("#containerDetalle2").height(alturaContainer);
         self.calcularAlturaImgLista();
 		
@@ -88,13 +87,13 @@ var app = {
 		$("#slider-vista").val( "on" );
 		$("#slider-vista").slider( "refresh" );
         $("#containerDetalle1").hide("slide");
-        $("#container1").show("slide");
+        $("#productosList").show("slide");
     },
 
     showDetail: function(){
 		$("#slider-vista").val ("off");
 		$("#slider-vista").slider( "refresh" );
-        $("#container1").hide("slide");
+        $("#productosList").hide("slide");
         $("#containerDetalle1").show("slide");
     },
     
