@@ -42,13 +42,17 @@ var app = {
         $("#containerDetalle2").height(alturaContainer);
 		
 		/* Calculamos el número de bloques que se van a visualizar*/
-		var alturaDetalle = 410;
-		var nbloques = Math.floor((alturaDocument-72)/alturaDetalle);
+		var alturaDetalle = 403;
+		var nbloques = Math.floor((alturaDocument-48)/alturaDetalle);
 		
 		/* Para la altura adaptable de los bloques de detalle de producto */
-		var alturaDetalle = (alturaDocument-72)/nbloques;
+		console.log("alturaDocument: ", alturaDocument);
+		console.log("nbloques: ", nbloques);
+		
+		var alturaDetalle = (alturaDocument-48)/nbloques;
 		$(".detalle-block").height(alturaDetalle);
-		$(".texto-servicio").height(500);
+		console.log("alturaDetalle: ", alturaDetalle);
+		$(".texto-servicio").height(alturaDetalle-88-154-83);
         
     },
 
