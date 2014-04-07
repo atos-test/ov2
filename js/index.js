@@ -61,10 +61,27 @@ var app = {
 
     calcularAlturaImgLista: function(){
         var self = app;
-        var ancho = $("#myIdGroup0").width();
-        var alto = $("#myIdGroup0").height();
-        console.log("Ancho-->", ancho);
-        console.log("Alto-->", alto);
+        $("#productosList").listview().listview('refresh');
+        var anchoDocument = $(document).width();
+
+        /*Ancho de UL es el 95% del document*/
+        var anchoUL = (anchoDocument - anchoDocument*5/100);
+
+        /*Ancho controlGroupIzq es el 90% del UL*/
+        var anchoControlGroupIzq = Math.ceil(anchoUL - anchoUL*10/100);
+
+        /*Ancho Imagen es el 25% del controlGroup*/
+        var anchoImg = (anchoControlGroupIzq - anchoControlGroupIzq*75/100) + "px";
+        $(".claseBurofax").height(anchoImg);
+        $(".claseCartaCertificada").height(anchoImg);
+        $(".claseFilatelia").height(anchoImg);
+        $(".clase4872").height(anchoImg);
+        $(".clasePostalExpres").height(anchoImg);
+        $(".claseTuSello").height(anchoImg);
+
+        console.log("AnchoUL-->", anchoUL);
+        console.log("anchoControlGroupIzq-->", anchoControlGroupIzq);
+        console.log("anchoImg-->", anchoImg);
     },
 
     showList: function(){
