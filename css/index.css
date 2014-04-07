@@ -149,7 +149,6 @@ h1 {
 
 .liControlGroupClass{
     padding:0 !important;
-    /*border: 0 !important;*/
 }
 
 .contenedorProducto{
@@ -175,7 +174,7 @@ h1 {
 
 .claseBurofax{
     background: url('../img/64x64-burofax.png');
-    background-size: 25% 100%;
+    background-size: 25% auto;
     background-repeat: no-repeat;
 }
 

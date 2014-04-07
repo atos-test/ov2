@@ -35,9 +35,7 @@ var app = {
         $("#productosList").listview().listview('refresh');
 
         var alturaDocument = $( document ).height();
-        console.log("Altura document-->", alturaDocument);
         var alturaContainer = (alturaDocument - alturaDocument*11/100) + "px";
-        console.log("Altura container-->", alturaContainer);
         $("#container2").height(alturaContainer);
         $("#containerDetalle2").height(alturaContainer);
 		
@@ -49,6 +47,9 @@ var app = {
 		var alturaDetalle = (alturaDocument-72)/nbloques;
 		$(".detalle-block").height(alturaDetalle);
 		$(".texto-servicio").height(0.3*alturaDetalle);
+
+        /*Calculamos la altura de la imagen de cada producto en la lista*/
+        self.calcularAlturaImgLista();
         
     },
 
@@ -57,6 +58,14 @@ var app = {
             var id= "#myIdGroup"+i;
             $(id).controlgroup().controlgroup("refresh");
         };
+    },
+
+    calcularAlturaImgLista: function(){
+        var self = app;
+        var ancho = $("#myIdGroup0").width();
+        var alto = $("#myIdGroup0").height();
+        console.log("Ancho-->", ancho);
+        console.log("Alto-->", alto);
     },
 
     showList: function(){

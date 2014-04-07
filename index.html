@@ -138,8 +138,7 @@
 
             <script type="text/template" id="productList-template" >
                 <% _.each(productList, function(producto,index) {%>
-                    <%var idGroup="myIdGroup"+index; 
-                    var idInfo="info"+index
+                    <%var idGroup="myIdGroup"+index;
                     var id= producto.id;
                     var clase="";
                     switch(id){
@@ -171,8 +170,6 @@
                             clase="claseTuSello";
                             break;
                     }
-                    console.log("id-->", id);
-                    console.log("Clase-->", clase);
                     %>
                     <li data-icon="false" class="liControlGroupClass">
                         <div id="<%=idGroup%>" data-role="controlgroup" data-type="horizontal" class="controlGroupClass ui-controlgroup ui-controlgroup-horizontal ui-corner-all">
@@ -187,6 +184,14 @@
                         </div>
                     </li>
                 <% }); %>
+                
+            </script>
+            <script type="text/javascript">
+                $("#productosList").listview().listview('refresh');
+                var ancho = $("#myIdGroup0").width();
+                var alto = $("#myIdGroup0").height();
+                console.log("Ancho-->", ancho);
+                console.log("Alto-->", alto);
             </script>
         </div>
     </body>
