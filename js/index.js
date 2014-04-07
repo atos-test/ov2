@@ -46,10 +46,14 @@ var app = {
 		/* Para la altura adaptable de los bloques de detalle de producto */
 		var alturaDetalle = (alturaDocument-72)/nbloques;
 		$(".detalle-block").height(alturaDetalle);
+<<<<<<< HEAD
 		$(".texto-servicio").height(0.3*alturaDetalle);
 
         /*Calculamos la altura de la imagen de cada producto en la lista*/
         self.calcularAlturaImgLista();
+=======
+		$(".texto-servicio").height(0.33*alturaDetalle);
+>>>>>>> 5e537f277d4df5327c0bf324fdce7c0d4e4100dd
         
     },
 
