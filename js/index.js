@@ -48,7 +48,7 @@ var app = {
 		/* Para la altura adaptable de los bloques de detalle de producto */
 		var alturaDetalle = (alturaDocument-72)/nbloques;
 		$(".detalle-block").height(alturaDetalle);
-		$(".texto-servicio").height(0.3*alturaDetalle);
+		$(".texto-servicio").height(0.33*alturaDetalle);
         
     },
 
