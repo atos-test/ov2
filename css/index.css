@@ -103,41 +103,7 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
-.barraSuperior{
-    height: 20px;
-}
-
-.nombreProducto {
-    font-size: 13px !important;
-    font-weight: bold !important;
-}
-
-.imagenProducto{
-    float: left;
-}
-
-.precioProducto {
-    font-size: 11px !important;
-}
-
-.plazoProducto{
-    font-size: 11px !important;
-}
-
-.listProduct{
-    margin: -1em;
-}
-
-
-
 /* INICIO ALBERTO */
-
-/*.ui-content{
-    border-width: 0;
-    overflow: visible;
-    overflow-x: hidden;
-    padding: 1em 1em 0 1em;
-}*/
 
 #container1{
     /*margin-top: 5%;*/
@@ -208,7 +174,7 @@ h1 {
     width: 7% !important;
     border-width: 0px !important;
     padding: 0 !important;
-    margin: 22px 0 22px 0 !important; /*Alto div = 64; alto icono = 20; Restante = 44*/
+    /*margin: 22px 0 22px 0 !important; /*Alto div = 64; alto icono = 20; Restante = 44*/
     -webkit-border-top-right-radius: inherit !important;
     border-top-right-radius: inherit !important;
     -webkit-border-bottom-right-radius: inherit !important;
@@ -220,9 +186,30 @@ h1 {
     background-color: rgba(255, 211, 0,1);
 }
 
-.infoProducto{
-    padding-left: 70px; /*Ancho img = 64;*/
+.nombreProducto {
+    font-size: 0.9em !important;
+    font-weight: bold !important;
 }
+
+.imagenProducto{
+    min-height: 4em;
+    background: url('../img/64x64-burofax.png');
+    background-size: 30% 100%;
+    background-repeat: no-repeat;
+}
+
+.infoProducto{
+    padding-left: 25%;
+}
+
+.precioProducto {
+    font-size: 0.7em !important;
+}
+
+.plazoProducto{
+    font-size: 0.7em !important;
+}
+
 
 /* FIN ALBERTO */
 

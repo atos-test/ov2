@@ -153,13 +153,12 @@
                     <li data-icon="false" class="liControlGroupClass">
                         <div id="<%=idGroup%>" data-role="controlgroup" data-type="horizontal" class="controlGroupClass ui-controlgroup ui-controlgroup-horizontal ui-corner-all">
                             <a data-role="button" id="<%=(producto.id)%>" class=" <%=(producto.Login)=="true"?"loginNecesario" : "" %> contenedorProducto btnControlGroupLeft">
-                                <div id="imgTitulo">
-                                    <img class="imagenProducto" src="<%= producto.Imagen %>"></img>
+                                <div class="imagenProducto">
                                 </div>
-                                <div id="infoProducto" class="infoProducto">
-                                    <label class="nombreProducto"><%= producto.NombreProducto %></label>
-                                    <label class="precioProducto"><%= producto.PrecioProducto %></label>
-                                    <label class="plazoProducto">Plazo de entrega: <%= producto.PlazoEntrega %></label>
+                                <div id="infoProducto">
+                                    <label class="nombreProducto infoProducto"><%= producto.NombreProducto %></label>
+                                    <label class="precioProducto infoProducto"><%= producto.PrecioProducto %></label>
+                                    <label class="plazoProducto infoProducto">Plazo de entrega: <%= producto.PlazoEntrega %></label>
                                 </div>
                             </a>
                             <a valor="<%=index%>" data-role="button" data-icon="info" data-iconpos="notext" class="btnControlGroupRight ui-icon-carat-d ui-btn-icon-notext ui-nodisc-icon">Info</a>
