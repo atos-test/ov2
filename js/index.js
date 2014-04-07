@@ -72,13 +72,20 @@ var app = {
         var anchoControlGroupIzq = Math.ceil(anchoUL - anchoUL*10/100);
 
         /*Ancho Imagen es el 25% del controlGroup*/
-        var anchoImg = (anchoControlGroupIzq - anchoControlGroupIzq*75/100) + "px";
+        var anchoImg = (anchoControlGroupIzq - anchoControlGroupIzq*75/100);
         $(".claseBurofax").height(anchoImg);
         $(".claseCartaCertificada").height(anchoImg);
         $(".claseFilatelia").height(anchoImg);
         $(".clase4872").height(anchoImg);
         $(".clasePostalExpres").height(anchoImg);
         $(".claseTuSello").height(anchoImg);
+
+        var tamNombreProducto = anchoImg/100 + 0.1 + "em";
+        var tamPrecioProducto = anchoImg/100 + "em";
+
+        $(".nombreProducto").css({ 'font-size': tamNombreProducto});
+        $(".precioProducto").css({ 'font-size': tamPrecioProducto});
+        $(".plazoProducto").css({ 'font-size': tamPrecioProducto});
 
         console.log("AnchoUL-->", anchoUL);
         console.log("anchoControlGroupIzq-->", anchoControlGroupIzq);
