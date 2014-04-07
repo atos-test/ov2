@@ -40,6 +40,14 @@ var app = {
         console.log("Altura container-->", alturaContainer);
         $("#container2").height(alturaContainer);
         $("#containerDetalle2").height(alturaContainer);
+		
+		/* Calculamos la altura del bloque detalle (flechas, fondo y descripción) */
+		var alturaDetalle = 410;
+		var nbloques = Math.floor((alturaDocument-72)/alturaDetalle);
+		
+		/* Para la altura adaptable de los bloques de detalle de producto */
+		$(".detalle-block").height((alturaDocument-72)/nbloques);
+		console.log("nbloques-->", nbloques);
         
     },
 
@@ -53,18 +61,14 @@ var app = {
     showList: function(){
 		$("#slider-vista").val( "on" );
 		$("#slider-vista").slider( "refresh" );
-        /*$("#btnDetalle").removeClass("ui-btn-active"); borrar una vez aceptado nuevo diseño 2-4-14*/
         $("#containerDetalle1").hide("slide");
-        /*$("#btnLista").addClass("ui-btn-active"); borrar una vez aceptado nuevo diseño 2-4-14*/
         $("#container1").show("slide");
     },
 
     showDetail: function(){
 		$("#slider-vista").val ("off");
 		$("#slider-vista").slider( "refresh" );
-        /*$("#btnLista").removeClass("ui-btn-active"); borrar una vez aceptado nuevo diseño 2-4-14*/
         $("#container1").hide("slide");
-        /*$("#btnDetalle").addClass("ui-btn-active"); borrar una vez aceptado nuevo diseño 2-4-14*/
         $("#containerDetalle1").show("slide");
     },
     
@@ -88,12 +92,6 @@ var app = {
         $("#btnAceptar").on("vclick", function(){
             console.log("Pulsado Aceptar");
         });
-
-		/* borrar una vez aceptado nuevo diseño 2-4-14
-        $("#btnLista").on("vclick",function(){
-            self.showList();
-        });
-		*/
 		
 		$("#slider-vista").change(function(){
 			if ($(this).val()=="on")
@@ -101,12 +99,6 @@ var app = {
 			else
 				self.showDetail();
 		});
-
-		/* borrar una vez aceptado nuevo diseño 2-4-14
-        $("#btnDetalle").on("vclick",function(){
-            self.showDetail();
-        });
-		*/
 
         $("#listPage").on("swipeleft", function(){
             self.showDetail();
