@@ -30,10 +30,6 @@ body {
     overflow:hidden !important;
 }
 
-.contentClass{
-    padding: 14px;
-}
-
 /* Portrait layout (default) */
 .app {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
@@ -170,44 +166,64 @@ h1 {
     border-bottom-left-radius: 0 !important;
 }
 
-.btnControlGroupRight{
-    width: 7% !important;
-    border-width: 0px !important;
+.btnInfo{
+    min-height: 3em !important;
     padding: 0 !important;
-    /*margin: 22px 0 22px 0 !important; /*Alto div = 64; alto icono = 20; Restante = 44*/
-    -webkit-border-top-right-radius: inherit !important;
-    border-top-right-radius: inherit !important;
-    -webkit-border-bottom-right-radius: inherit !important;
-    border-bottom-right-radius: inherit !important;
-    -webkit-border-top-left-radius: inherit !important;
-    border-top-left-radius: inherit !important;
-    -webkit-border-bottom-left-radius: inherit !important;
-    border-bottom-left-radius: inherit !important;
-    background-color: rgba(255, 211, 0,1);
+    border-width: 0 !important;
 }
 
-.nombreProducto {
-    font-size: 0.9em !important;
-    font-weight: bold !important;
-}
 
-.imagenProducto{
-    min-height: 4em;
+.claseBurofax{
     background: url('../img/64x64-burofax.png');
-    background-size: 30% 100%;
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
+}
+
+.claseCartaCertificada{
+    background: url('../img/64x64-carta-certificada.png');
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
+}
+
+.claseFilatelia{
+    background: url('../img/64x64-filatelia.png');
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
+}
+
+.clase4872{
+    background: url('../img/64x64-postal-4872.png');
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
+}
+
+.clasePostalExpres{
+    background: url('../img/64x64-postal-expres.png');
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
+}
+
+.claseTuSello{
+    background: url('../img/64x64-tu-sello.png');
+    background-size: 25% 100%;
     background-repeat: no-repeat;
 }
 
 .infoProducto{
-    padding-left: 25%;
+    padding-left: 26%;
+}
+
+.nombreProducto {
+    font-size: 0.78em !important;
+    font-weight: bold !important;
 }
 
 .precioProducto {
-    font-size: 0.7em !important;
+    font-size: 0.6em !important;
 }
 
 .plazoProducto{
-    font-size: 0.7em !important;
+    font-size: 0.6em !important;
 }
 
 

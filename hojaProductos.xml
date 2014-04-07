@@ -43,7 +43,7 @@
 			<Ambito>Nacional e Internacional</Ambito>
 			<Operativa>A través de esta página puede realizar su pedido de los productos filatélicos.</Operativa>
 			<Imagen>img/64x64-filatelia.png</Imagen>
-			<PlazoEntrega>Recibido en unos días.</PlazoEntrega>
+			<PlazoEntrega>Unos días.</PlazoEntrega>
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
@@ -65,7 +65,7 @@
 			<Ambito>Nacional y Andorra</Ambito>
 			<Operativa>Se admite en oficinas o en puntos de admisión masiva con la modalidad de contrato.Circula registrado.Se entrega bajo firma en el domicilio.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
-			<PlazoEntrega>De 4 a 5 días hábiles</PlazoEntrega>
+			<PlazoEntrega>4-5 días hábiles</PlazoEntrega>
 			<Login>false</Login>
 		</cProducto>
 		<cProducto>
@@ -76,7 +76,7 @@
 			<Ambito>Internacional</Ambito>
 			<Operativa>La entrega se realizará bajo firma en el domicilio del destinatario. La admisión se realiza en oficinas.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
-			<PlazoEntrega>De 8 a 10 días hábiles</PlazoEntrega>
+			<PlazoEntrega>8-10 días hábiles</PlazoEntrega>
 			<Login>false</Login>
 		</cProducto>
 		<cProducto>
@@ -87,7 +87,7 @@
 			<Ambito>Internacional</Ambito>
 			<Operativa>La admisión se realiza en oficinas. La entrega se efectúa en el domicilio del destinatario.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
-			<PlazoEntrega>Dependiente del país.</PlazoEntrega>
+			<PlazoEntrega>Depende del país.</PlazoEntrega>
 			<Login>false</Login>
 		</cProducto>
 		<cProducto>
@@ -120,7 +120,7 @@
 			<Ambito>Internacional</Ambito>
 			<Operativa>Entrega bajo firma en el domicilio o la oficina del destinatario.</Operativa>
 			<Imagen>img/64x64-postal-expres.png</Imagen>
-			<PlazoEntrega>Dependiente del pais.</PlazoEntrega>
+			<PlazoEntrega>Depende del pais.</PlazoEntrega>
 			<Login>false</Login>
 		</cProducto>
 		<cProducto>

@@ -40,7 +40,7 @@
 				</div>
             </div>    
     <!-- INICIO CONTENIDO -->
-            <div data-role="content" data-theme="e" id="content" data-role="true" class="contentClass">
+            <div data-role="content" data-theme="e" id="content" data-role="true">
 
                 <div id="container1">
                     <div id="container2">
@@ -139,19 +139,51 @@
             <script type="text/template" id="productList-template" >
                 <% _.each(productList, function(producto,index) {%>
                     <%var idGroup="myIdGroup"+index; 
-                    var idInfo="info"+index%>
+                    var idInfo="info"+index
+                    var id= producto.id;
+                    var clase="";
+                    switch(id){
+                        case "prod1":
+                        case "prod2":
+                        case "prod5":
+                        case "prod6":
+                        case "prod7":
+                        case "prod8":
+                        case "prod10":
+                        case "prod13":
+                            clase="claseBurofax";
+                            break;
+                        case "prod3":
+                            clase="claseCartaCertificada";
+                            break;
+                        case "prod4":
+                            clase="claseFilatelia";
+                            break;
+                        case "prod9":
+                            clase="clase4872";
+                            break;
+                        case "prod11":
+                        case "prod12":
+                            clase="clasePostalExpres";
+                            break;
+                        case "prod14":
+                        case "prod15":
+                            clase="claseTuSello";
+                            break;
+                    }
+                    console.log("id-->", id);
+                    console.log("Clase-->", clase);
+                    %>
                     <li data-icon="false" class="liControlGroupClass">
                         <div id="<%=idGroup%>" data-role="controlgroup" data-type="horizontal" class="controlGroupClass ui-controlgroup ui-controlgroup-horizontal ui-corner-all">
-                            <a data-role="button" id="<%=(producto.id)%>" class=" <%=(producto.Login)=="true"?"loginNecesario" : "" %> contenedorProducto btnControlGroupLeft">
-                                <div class="imagenProducto">
-                                </div>
+                            <a data-role="button" id="<%=(producto.id)%>" class=" <%=clase%> <%=(producto.Login)=="true"?"loginNecesario" : "" %> contenedorProducto btnControlGroupLeft">
                                 <div id="infoProducto">
                                     <label class="nombreProducto infoProducto"><%= producto.NombreProducto %></label>
                                     <label class="precioProducto infoProducto"><%= producto.PrecioProducto %></label>
                                     <label class="plazoProducto infoProducto">Plazo de entrega: <%= producto.PlazoEntrega %></label>
                                 </div>
                             </a>
-                            <a valor="<%=index%>" data-role="button" data-icon="info" data-iconpos="notext" class="btnControlGroupRight ui-icon-carat-d ui-btn-icon-notext ui-nodisc-icon">Info</a>
+                            <a valor="<%=index%>" data-role="button" data-icon="info" data-iconpos="notext" data-iconshadow="false" data-theme="e" class="btnInfo">Info</a>
                         </div>
                     </li>
                 <% }); %>
