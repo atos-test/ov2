@@ -36,8 +36,6 @@ var app = {
 
 
         var alturaDocument = $( document ).height();
-        var alturaContainer = (alturaDocument - alturaDocument*11/100) + "px";
-        $("#containerDetalle2").height(alturaContainer);
         self.calcularAlturaImgLista();
 		
 		/* Calculamos el número de bloques que se van a visualizar*/
