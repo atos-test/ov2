@@ -34,12 +34,12 @@ var app = {
         self.refreshGroups(products.length);
         $("#productosList").listview().listview('refresh');
 
+
         var alturaDocument = $( document ).height();
-        console.log("Altura document-->", alturaDocument);
         var alturaContainer = (alturaDocument - alturaDocument*11/100) + "px";
-        console.log("Altura container-->", alturaContainer);
         $("#container2").height(alturaContainer);
         $("#containerDetalle2").height(alturaContainer);
+        self.calcularAlturaImgLista();
 		
 		/* Calculamos el número de bloques que se van a visualizar*/
 		var alturaDetalle = 403;
@@ -61,6 +61,31 @@ var app = {
             var id= "#myIdGroup"+i;
             $(id).controlgroup().controlgroup("refresh");
         };
+    },
+
+    calcularAlturaImgLista: function(){
+        var self = app;
+        $("#productosList").listview().listview('refresh');
+        var anchoDocument = $(document).width();
+
+        /*Ancho de UL es el 95% del document*/
+        var anchoUL = (anchoDocument - anchoDocument*5/100);
+
+        /*Ancho controlGroupIzq es el 90% del UL*/
+        var anchoControlGroupIzq = Math.ceil(anchoUL - anchoUL*10/100);
+
+        /*Ancho Imagen es el 25% del controlGroup*/
+        var anchoImg = (anchoControlGroupIzq - anchoControlGroupIzq*75/100) + "px";
+        $(".claseBurofax").height(anchoImg);
+        $(".claseCartaCertificada").height(anchoImg);
+        $(".claseFilatelia").height(anchoImg);
+        $(".clase4872").height(anchoImg);
+        $(".clasePostalExpres").height(anchoImg);
+        $(".claseTuSello").height(anchoImg);
+
+        console.log("AnchoUL-->", anchoUL);
+        console.log("anchoControlGroupIzq-->", anchoControlGroupIzq);
+        console.log("anchoImg-->", anchoImg);
     },
 
     showList: function(){
