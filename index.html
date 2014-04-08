@@ -42,10 +42,12 @@
     <!-- INICIO CONTENIDO -->
             <div data-role="content" data-theme="e" id="content" data-role="true">
 
-                
-                <ul id="productosList" data-role="listview" data-inset="true">
+                <div class="contenedorLista">
+                    <ul id="productosList" data-role="listview" data-inset="true">
                
-                </ul>
+                    </ul>
+                </div>
+                
                 
                 
                 <div id="containerDetalle1">
@@ -169,7 +171,7 @@
                     }
                     %>
                     <li data-icon="false" class="liControlGroupClass">
-                        <div id="<%=idGroup%>" data-role="controlgroup" data-type="horizontal" class="controlGroupClass ui-controlgroup ui-controlgroup-horizontal ui-corner-all">
+                        <div id="<%=idGroup%>" data-role="controlgroup" data-type="horizontal" class="controlGroupClass ui-body-c ui-controlgroup ui-controlgroup-horizontal ui-corner-all">
                             <a data-role="button" id="<%=(producto.id)%>" class=" <%=clase%> <%=(producto.Login)=="true"?"loginNecesario" : "" %> contenedorProducto btnControlGroupLeft">
                                 <div id="infoProducto">
                                     <label class="nombreProducto infoProducto"><%= producto.NombreProducto %></label>
@@ -177,7 +179,7 @@
                                     <label class="plazoProducto infoProducto">Plazo de entrega: <%= producto.PlazoEntrega %></label>
                                 </div>
                             </a>
-                            <a valor="<%=index%>" data-role="button" data-icon="info" data-iconpos="notext" data-iconshadow="false" data-theme="e" class="btnInfo">Info</a>
+                            <a valor="<%=index%>" data-role="button" data-icon="info" data-iconpos="notext" class="btnInfo ui-nodisc-icon">Info</a>
                         </div>
                     </li>
                 <% }); %>

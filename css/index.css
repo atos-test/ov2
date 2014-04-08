@@ -101,18 +101,9 @@ h1 {
 
 /* INICIO ALBERTO */
 
-#container1{
-    /*margin-top: 5%;*/
-    height: 100% !important;
-    width: 100% !important;
-    overflow: hidden !important;
-}
-
-#container2{
-    width: 100%;
-    overflow: auto !important;
-    padding-right: 15px !important;
-	padding-left:7.5px;
+.contenedorLista{
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 #containerDetalle1{
@@ -134,8 +125,8 @@ h1 {
 }
 
 .ui-radio input {
-    height: 0px;
-    width: 0px; 
+    height: 0;
+    width: 0; 
 }
 
 .ui-controlgroup-controls{
@@ -143,8 +134,10 @@ h1 {
 }
 
 .controlGroupClass{
-    margin-top: 0px;
-    margin-bottom: 0px;
+    border: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom-right-radius: 0;
 }
 
 .liControlGroupClass{
@@ -157,7 +150,7 @@ h1 {
 }
 
 .btnControlGroupLeft{
-    border-width: 0px !important;
+    border-width: 0 !important;
     text-align: left;
     -webkit-border-top-left-radius: 0 !important;
     border-top-left-radius: 0 !important;
@@ -166,9 +159,14 @@ h1 {
 }
 
 .btnInfo{
-    min-height: 3em !important;
     padding: 0 !important;
+    background-color: rgba(255, 211, 0,1);
+    border-bottom-left-radius: inherit !important;
+    border-top-left-radius: inherit !important;
+    border-bottom-right-radius: 16px !important;
     border-width: 0 !important;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 
@@ -213,6 +211,7 @@ h1 {
 }
 
 .nombreProducto {
+    color: #000;
     font-weight: bold !important;
 }
 

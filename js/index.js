@@ -36,6 +36,8 @@ var app = {
 
 
         var alturaDocument = $( document ).height();
+        //Calculamos la altura de la imagen en función del tipo de pantalla (480x800, 320x480..)
+        //También se calcula el tamaño de la letra y el punto medio donde ubicar el boton info
         self.calcularAlturaImgLista();
 		
 		/* Calculamos el número de bloques que se van a visualizar*/
@@ -80,12 +82,20 @@ var app = {
         $(".clasePostalExpres").height(anchoImg);
         $(".claseTuSello").height(anchoImg);
 
+
+        /*Calculamos el tamaño de la letra en función del alto/ancho de la imagen*/
         var tamNombreProducto = anchoImg/100 + 0.1 + "em";
         var tamPrecioProducto = anchoImg/100 + "em";
 
         $(".nombreProducto").css({ 'font-size': tamNombreProducto});
         $(".precioProducto").css({ 'font-size': tamPrecioProducto});
         $(".plazoProducto").css({ 'font-size': tamPrecioProducto});
+
+        /*Calculamos el punto medio del botón info en funcion del alto/ancho de la imagen*/
+        //Formula: altura/2 - 20(altura del boton)/2
+
+        var alturaMediaInfo = anchoImg/2 - 10 + "px";
+        $(".btnInfo").css({ 'margin-top': alturaMediaInfo});
 
         console.log("AnchoUL-->", anchoUL);
         console.log("anchoControlGroupIzq-->", anchoControlGroupIzq);
