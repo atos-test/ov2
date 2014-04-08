@@ -138,6 +138,7 @@
             <script type="text/template" id="productList-template" >
                 <% _.each(productList, function(producto,index) {%>
                     <%var idGroup="myIdGroup"+index;
+                    var idInfo="btnInfo"+index;
                     var id= producto.id;
                     var clase="";
                     switch(id){
@@ -179,7 +180,7 @@
                                     <label class="plazoProducto infoProducto">Plazo de entrega: <%= producto.PlazoEntrega %></label>
                                 </div>
                             </a>
-                            <a valor="<%=index%>" data-role="button" data-icon="info" data-iconpos="notext" class="btnInfo ui-nodisc-icon">Info</a>
+                            <a id="<%=idInfo%>" valor="<%=index%>" data-role="button" data-icon="info" data-iconpos="notext" class="btnInfo btnRedondeado ui-nodisc-icon">&nbsp;</a>
                         </div>
                     </li>
                 <% }); %>

@@ -137,7 +137,10 @@ h1 {
     border: 0;
     margin-top: 0;
     margin-bottom: 0;
-    border-bottom-right-radius: 0;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-top-left-radius: inherit;
+    border-bottom-right-radius: inherit;
 }
 
 .liControlGroupClass{
@@ -149,21 +152,39 @@ h1 {
     padding: 0 !important;
 }
 
+.primerHijo{
+    -webkit-border-top-left-radius: 16px !important;
+    border-top-left-radius: 16px !important;
+}
+
+.ultimoHijo{
+    -webkit-border-bottom-left-radius: 16px !important;
+    border-bottom-left-radius: 16px !important;
+}
+
 .btnControlGroupLeft{
     border-width: 0 !important;
     text-align: left;
-    -webkit-border-top-left-radius: 0 !important;
-    border-top-left-radius: 0 !important;
-    -webkit-border-bottom-left-radius: 0 !important;
-    border-bottom-left-radius: 0 !important;
+    -webkit-border-top-left-radius: inherit !important;
+    border-top-left-radius: inherit !important;
+    -webkit-border-bottom-left-radius: inherit !important;
+    border-bottom-left-radius: inherit !important;
+}
+
+.btnRedondeado{
+    -webkit-border-bottom-right-radius: 16px !important;
+    border-bottom-right-radius: 16px !important;
+    -webkit-border-bottom-left-radius: 16px !important;
+    border-bottom-left-radius: 16px !important;
+    -webkit-border-top-left-radius: 16px !important;
+    border-top-left-radius: 16px !important;
+    -webkit-border-top-right-radius: 16px !important;
+    border-top-right-radius: 16px !important;
 }
 
 .btnInfo{
     padding: 0 !important;
     background-color: rgba(255, 211, 0,1);
-    border-bottom-left-radius: inherit !important;
-    border-top-left-radius: inherit !important;
-    border-bottom-right-radius: 16px !important;
     border-width: 0 !important;
     vertical-align: middle;
     display: inline-block;
