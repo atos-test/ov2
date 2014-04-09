@@ -114,13 +114,6 @@ h1 {
 	padding-left: 2%;
 }
 
-#containerDetalle2{
-    width: 100%;
-    overflow: auto !important;
-    padding-right: 15px !important;
-	padding-left:7.5px;
-}
-
 .ui-radio{
     width: 50%;
 }
