@@ -72,6 +72,7 @@ var app = {
 
         /*Ancho controlGroupIzq es el 90% del UL*/
         var anchoControlGroupIzq = Math.ceil(anchoUL - anchoUL*10/100);
+        var anchoControlGroupDer = anchoUL - anchoControlGroupIzq;
 
         /*Ancho Imagen es el 25% del controlGroup*/
         var anchoImg = (anchoControlGroupIzq - anchoControlGroupIzq*75/100);
@@ -92,13 +93,14 @@ var app = {
         $(".plazoProducto").css({ 'font-size': tamPrecioProducto});
 
         /*Calculamos el punto medio del botón info en funcion del alto/ancho de la imagen*/
-        //Formula: altura/2 - 20(altura del boton)/2
+        //Formula: altura/2 - 28(altura del boton)/2
 
-        var alturaMediaInfo = anchoImg/2 - 10 + "px";
+        var alturaMediaInfo = anchoImg/2 - 14 + "px";
         $(".btnInfo").css({ 'margin-top': alturaMediaInfo});
 
         console.log("AnchoUL-->", anchoUL);
         console.log("anchoControlGroupIzq-->", anchoControlGroupIzq);
+        console.log("anchoControlGroupDer-->", anchoControlGroupDer);
         console.log("anchoImg-->", anchoImg);
     },
 
@@ -151,6 +153,14 @@ var app = {
         $("#listPage").on("swiperight", function(){
             self.showList();
         });
+
+        /*Botones info*/
+        /*$("#btnInfo14").on("vclick",function(){
+            self.showDetail();
+            $('html, body').animate({
+                scrollTop: $("#tuSello").offset().top
+            }, 2000);
+        });*/
 
         document.addEventListener('deviceready', function(){
             console.log("Received Event: deviceready");

@@ -1030,7 +1030,7 @@ a.ui-link-inherit {
 		-moz-background-size: 864px 18px;
 		-o-background-size: 864px 18px;
 		-webkit-background-size: 864px 18px;
-		background-size: 864px 18px;
+		background-size: 864px 1.5em;
 	}
 	.ui-icon-alt .ui-icon {
 		background-image: url(images/icons-36-black.png);
@@ -1081,7 +1081,7 @@ a.ui-link-inherit {
 		background-position: 	-503px 50%;
 	}
 	.ui-icon-info {
-		background-position: 	-552px 50%;
+		background-position: 	-533px 50%;
 	}
 	.ui-icon-home {
 		background-position: 	-575px 50%;

@@ -146,16 +146,6 @@ h1 {
     padding: 0 !important;
 }
 
-.primerHijo{
-    -webkit-border-top-left-radius: 16px !important;
-    border-top-left-radius: 16px !important;
-}
-
-.ultimoHijo{
-    -webkit-border-bottom-left-radius: 16px !important;
-    border-bottom-left-radius: 16px !important;
-}
-
 .btnControlGroupLeft{
     border-width: 0 !important;
     text-align: left;
@@ -165,23 +155,20 @@ h1 {
     border-bottom-left-radius: inherit !important;
 }
 
-.btnRedondeado{
-    -webkit-border-bottom-right-radius: 16px !important;
-    border-bottom-right-radius: 16px !important;
-    -webkit-border-bottom-left-radius: 16px !important;
-    border-bottom-left-radius: 16px !important;
-    -webkit-border-top-left-radius: 16px !important;
-    border-top-left-radius: 16px !important;
-    -webkit-border-top-right-radius: 16px !important;
-    border-top-right-radius: 16px !important;
+.ui-icon-infoEdit {
+    background-image: url(../img/icon-info-14-b.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .btnInfo{
-    padding: 0 !important;
     background-color: rgba(255, 211, 0,1);
     border-width: 0 !important;
-    vertical-align: middle;
-    display: inline-block;
+    border-radius: 2em !important;
+    padding: 0 !important;
+    /*Tamaño fijo*/
+    width: 28px !important;
+    height: 28px !important;
 }
 
 
