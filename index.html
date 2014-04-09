@@ -53,7 +53,7 @@
                 
                 <div id="containerDetalle1">
 					<div id="detalle">
-					
+					<!--
 						<div class="ui-corner-all custom-corners detalle-block">
 							<a href="#" class="btn-detalle ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext ui-nodisc-icon"></a>
 								<div class="fondo-burofax detalle ui-bar">
@@ -128,10 +128,65 @@
 									</div>
 								</div>
 							<a href="#" class="btn-detalle ui-btn ui-corner-all ui-icon-carat-d ui-btn-icon-notext ui-nodisc-icon"></a>
-						</div>
+						</div>-->
 					</div>
                 </div>  
             </div>
+
+            <script type="text/template" id="productDetail-template" >
+                <% _.each(productDetail, function(producto,index) {%>
+                    <%  var fondo="";
+                        switch(producto.id){
+                            case "prod1":
+                            case "prod2":
+                            case "prod3":
+                            case "prod4":
+                            case "prod5":
+                            case "prod6":
+                            case "prod8":
+                            case "prod9":
+                            case "prod10":
+                            case "prod11":
+                            case "prod12":
+                            case "prod13":
+                            case "prod14":
+                                fondo="fondo-burofax";
+                                break;
+                            case "prod7":
+                                fondo="fondo-paqinteco"
+                                break;                            
+                            case "prod15":
+                                fondo="fondo-tusello";
+                                break;
+                        }
+                    %>
+                    <div class="ui-corner-all custom-corners detalle-block">
+                            <a href="#" class="btn-detalle ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext ui-nodisc-icon"></a>
+                                <div class="<%=fondo%> detalle ui-bar">
+                                    <%=producto.NombreProducto%>
+                                </div>
+                                <div class="ui-body ui-body-c descripcion-servicio">
+                                    <p class="texto-servicio"><%=producto.DescripcionProducto%></p>
+                                    <div class="ui-grid-b grid-caracteristicas">
+                                        <div class="ui-block-a">
+                                            <p class="label-titulos">desde</p>
+                                            <p class="label-datos"><%=producto.PrecioProducto%></p>
+                                        </div>
+                                        <div class="ui-block-b">
+                                            <p class="label-titulos">plazo</p>
+                                            <p class="label-datos"><%=producto.PlazoEntrega%></p>
+                                        </div>
+                                        <div class="ui-block-c">
+                                            <p class="label-titulos">ámbito</p>
+                                            <p class="label-datos"><%=producto.Ambito%></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            <a href="#" class="btn-detalle ui-btn ui-corner-all ui-icon-carat-d ui-btn-icon-notext ui-nodisc-icon"></a>
+                        </div>
+                    
+                <% }); %>
+            </script>
 
             <script type="text/template" id="productList-template" >
                 <% _.each(productList, function(producto,index) {%>
@@ -177,7 +232,7 @@
                                     <label class="plazoProducto infoProducto">Plazo de entrega: <%= producto.PlazoEntrega %></label>
                                 </div>
                             </a>
-                            <a id="<%=idInfo%>" valor="<%=index%>" data-role="button" data-icon="infoEdit" data-iconpos="notext" data-inline="true"class="btnInfo ui-nodisc-icon"></a>
+                            <a id="<%=idInfo%>" valor="<%=index%>" data-role="button" data-icon="infoEdit" data-iconpos="notext" data-inline="true" class="btnInfo ui-nodisc-icon"></a>
                         </div>
                     </li>
                 <% }); %>

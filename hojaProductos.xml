@@ -4,9 +4,9 @@
 		<cProducto>
 			<id>prod1</id>
 			<NombreProducto>Burofax</NombreProducto>
-			<PrecioProducto>Desde 6,18 €</PrecioProducto>
+			<PrecioProducto>6,18 €</PrecioProducto>
 			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
-			<Ambito>Nacional e Internacional</Ambito>
+			<Ambito>nacional e internac.</Ambito>
 			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
 			<PlazoEntrega>24H</PlazoEntrega>
@@ -15,9 +15,9 @@
 		<cProducto>
 			<id>prod2</id>
 			<NombreProducto>Carta digital</NombreProducto>
-			<PrecioProducto>Desde 0,55 €</PrecioProducto>
+			<PrecioProducto>0,55 €</PrecioProducto>
 			<DescripcionProducto>Envía tus cartas, tanto ordinarias como certificadas, a cualquier lugar del mundo, desde tu ordenador, sin ningún desplazamiento y a cualquier hora. Correos las imprime, ensobra y deposita en el buzón del domicilio de su destinatario.</DescripcionProducto>
-			<Ambito>Nacional e Internacional</Ambito>
+			<Ambito>nacional e internac.</Ambito>
 			<Operativa>Los envíos son depositados por el personal de Correos en el buzón del destinatario.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
 			<PlazoEntrega>Inmediato</PlazoEntrega>
@@ -26,10 +26,10 @@
 		<cProducto>
 			<id>prod3</id>
 			<NombreProducto>Certificados</NombreProducto>
-			<PrecioProducto>Desde 4,13 €</PrecioProducto>
+			<PrecioProducto>4,13 €</PrecioProducto>
 			<DescripcionProducto>Rapidez y eficacia en tus envíos con carácter urgente. Con total fiabilidad y confidencialidad. La entrega se realizará en el domicilio y bajo firma.
 			Puedes realizar un seguimiento del envío a través de la página web de Correos .o preparar el envío desde el ordenador</DescripcionProducto>
-			<Ambito>Nacional e Internacional</Ambito>
+			<Ambito>nacional e internac.</Ambito>
 			<Operativa>Entrega, en todo el territorio nacional, del 90% de los envíos en 1 día hábil</Operativa>
 			<Imagen>img/64x64-carta-certificada.png</Imagen>
 			<PlazoEntrega>24H</PlazoEntrega>
@@ -38,20 +38,20 @@
 		<cProducto>
 			<id>prod4</id>
 			<NombreProducto>Filatelia</NombreProducto>
-			<PrecioProducto>Desde 1 €</PrecioProducto>
+			<PrecioProducto>1 €</PrecioProducto>
 			<DescripcionProducto>La filatelia es el arte de coleccionar sellos, pero incluye también el coleccionismo de otros objetos relacionados con el Correo y su historia (cartas, tarjetas, álbumes, matasellos,…). Se trata de una afición que comparten decenas de millones de personas en todo el mundo.</DescripcionProducto>
-			<Ambito>Nacional e Internacional</Ambito>
+			<Ambito>nacional e internac.</Ambito>
 			<Operativa>A través de esta página puede realizar su pedido de los productos filatélicos.</Operativa>
 			<Imagen>img/64x64-filatelia.png</Imagen>
-			<PlazoEntrega>Unos días.</PlazoEntrega>
+			<PlazoEntrega>24H</PlazoEntrega>
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
 			<id>prod5</id>
 			<NombreProducto>Notificaciones</NombreProducto>
-			<PrecioProducto>Desde 3,95 €</PrecioProducto>
+			<PrecioProducto>3,95 €</PrecioProducto>
 			<DescripcionProducto>Se trata de un servicio indicado exclusivamente para entidades administrativas y judiciales que quieran tener constancia de que se ha realizado la entrega de sus comunicaciones de carácter legal. Van certificadas y se realizan hasta dos intentos de entrega en domicilio.</DescripcionProducto>
-			<Ambito>Nacional</Ambito>
+			<Ambito>nacional</Ambito>
 			<Operativa>Entrega, en todo el territorio nacional, del 93% de los envíos en 3 días hábiles.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
 			<PlazoEntrega>3 días hábiles</PlazoEntrega>
@@ -60,9 +60,9 @@
 		<cProducto>
 			<id>prod6</id>
 			<NombreProducto>Paquete azul</NombreProducto>
-			<PrecioProducto>Desde 6,50 €</PrecioProducto>
+			<PrecioProducto>6,50 €</PrecioProducto>
 			<DescripcionProducto>Envío de paquetes o documentos voluminosos a España y Andorra. Estos paquetes están registrados y se entregan bajo firma en el domicilio del destinatario.</DescripcionProducto>
-			<Ambito>Nacional y Andorra</Ambito>
+			<Ambito>nacional y Andorra</Ambito>
 			<Operativa>Se admite en oficinas o en puntos de admisión masiva con la modalidad de contrato.Circula registrado.Se entrega bajo firma en el domicilio.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
 			<PlazoEntrega>4-5 días hábiles</PlazoEntrega>
@@ -70,10 +70,10 @@
 		</cProducto>
 		<cProducto>
 			<id>prod7</id>
-			<NombreProducto>Paquete económico internac.</NombreProducto>
-			<PrecioProducto>Desde 15,53 €</PrecioProducto>
+			<NombreProducto>Paquete económico internacional</NombreProducto>
+			<PrecioProducto>15,53 €</PrecioProducto>
 			<DescripcionProducto>Haz que tus envíos de paquetería sean lo más económicos con este servicio internacional adaptado a tus necesidades con posibilidad de seguimiento online y telefónico, aviso de recibo y mucho más.</DescripcionProducto>
-			<Ambito>Internacional</Ambito>
+			<Ambito>internac.</Ambito>
 			<Operativa>La entrega se realizará bajo firma en el domicilio del destinatario. La admisión se realiza en oficinas.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
 			<PlazoEntrega>8-10 días hábiles</PlazoEntrega>
@@ -81,32 +81,32 @@
 		</cProducto>
 		<cProducto>
 			<id>prod8</id>
-			<NombreProducto>Paquete internac. prioritario</NombreProducto>
-			<PrecioProducto>Desde 18,72€</PrecioProducto>
+			<NombreProducto>Paquete internacional prioritario</NombreProducto>
+			<PrecioProducto>18,72€</PrecioProducto>
 			<DescripcionProducto>Haz que tus envíos internacionales lleguen cuanto antes gracias a este servicio preferente al extranjero de mercancías y objetos de hasta 30kg. Además van registrados individualmente y se entregan al destinatario bajo firma.</DescripcionProducto>
-			<Ambito>Internacional</Ambito>
+			<Ambito>internac.</Ambito>
 			<Operativa>La admisión se realiza en oficinas. La entrega se efectúa en el domicilio del destinatario.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
-			<PlazoEntrega>Dependiente del país.</PlazoEntrega>
+			<PlazoEntrega>Depende del destino</PlazoEntrega>
 			<Login>false</Login>
 		</cProducto>
 		<cProducto>
 			<id>prod9</id>
 			<NombreProducto>Postal 48/72</NombreProducto>
-			<PrecioProducto>Desde 4,54€</PrecioProducto>
+			<PrecioProducto>4,54€</PrecioProducto>
 			<DescripcionProducto>Envío de paquetería con total cobertura en territorio nacional y Andorra. Está diseñado para satisfacer las demandas del mercado y muy especialmente las del sector del e-commerce.</DescripcionProducto>
-			<Ambito>Nacional</Ambito>
+			<Ambito>nacional</Ambito>
 			<Operativa>La entrega se realiza: en el domicilio del destinatario, en oficinas de Referencia o en la oficina elegida</Operativa>
 			<Imagen>img/64x64-postal-4872.png</Imagen>
-			<PlazoEntrega>A partir de 48H</PlazoEntrega>
+			<PlazoEntrega>48H</PlazoEntrega>
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
 			<id>prod10</id>
 			<NombreProducto>Postal digital</NombreProducto>
-			<PrecioProducto>Desde 1,93 €</PrecioProducto>
+			<PrecioProducto>1,93 €</PrecioProducto>
 			<DescripcionProducto>Envía Tarjetas Postales con tus mejores imágenes a quién quieras. Desde tu ordenador, sin esperas ni desplazamientos, porque Correos las imprime y ensobra y las lleva hasta el buzón de su destinatario, esté donde esté.</DescripcionProducto>
-			<Ambito>Nacional e Internacional</Ambito>
+			<Ambito>nacional e internac.</Ambito>
 			<Operativa>Circulan en sobre blanco de doble ventana y se entregan por el personal de Correos en el buzón del destinatario.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
 			<PlazoEntrega>Inmediato</PlazoEntrega>
@@ -115,31 +115,31 @@
 		<cProducto>
 			<id>prod11</id>
 			<NombreProducto>Postal Exprés Internacional</NombreProducto>
-			<PrecioProducto>Desde 28,86€</PrecioProducto>
+			<PrecioProducto>28,86€</PrecioProducto>
 			<DescripcionProducto>Envíos urgentes de paquetería para empresas con una amplia cobertura y unas garantías excepcionales. Puedes realizar el envío desde cualquier oficina de Correos a cualquier parte del mundo.</DescripcionProducto>
-			<Ambito>Internacional</Ambito>
+			<Ambito>internac.</Ambito>
 			<Operativa>Entrega bajo firma en el domicilio o la oficina del destinatario.</Operativa>
 			<Imagen>img/64x64-postal-expres.png</Imagen>
-			<PlazoEntrega>Dependiente del pais.</PlazoEntrega>
+			<PlazoEntrega>Depende del destino</PlazoEntrega>
 			<Login>false</Login>
 		</cProducto>
 		<cProducto>
 			<id>prod12</id>
 			<NombreProducto>Postal Exprés Nacional</NombreProducto>
-			<PrecioProducto>Desde 13,67€</PrecioProducto>
+			<PrecioProducto>13,67€</PrecioProducto>
 			<DescripcionProducto>Envío de paquetería para particulares y empresas con total cobertura en territorio nacional y Andorra. Puedes realizar el envío desde cualquier oficina de Correos e incluso preparar tus envíos desde el ordenador.</DescripcionProducto>
-			<Ambito>Nacional y Andorra</Ambito>
+			<Ambito>nacional y Andorra</Ambito>
 			<Operativa>La entrega se realiza: en el domicilio del destinatario, en oficinas de Referencia o en la oficina elegida</Operativa>
 			<Imagen>img/64x64-postal-expres.png</Imagen>
-			<PlazoEntrega>A partir de 24H</PlazoEntrega>
+			<PlazoEntrega>24H</PlazoEntrega>
 			<Login>false</Login>
 		</cProducto>
 		<cProducto>
 			<id>prod13</id>
 			<NombreProducto>Teleben</NombreProducto>
-			<PrecioProducto>10</PrecioProducto>
+			<PrecioProducto>10€</PrecioProducto>
 			<DescripcionProducto>Este servicio se utiliza para enviar de manera urgente y segura documentos que requieran de una entrega fehaciente, sirviendo de prueba frente a terceros, por lo que siempre se entrega bajo firma del destinatario. Se puede acceder a este servicio tanto de manera online como acudiendo a cualquier oficina de Correos.</DescripcionProducto>
-			<Ambito>Nacional e Internacional</Ambito>
+			<Ambito>nacional e internac.</Ambito>
 			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
 			<PlazoEntrega>24H</PlazoEntrega>
@@ -148,9 +148,9 @@
 		<cProducto>
 			<id>prod14</id>
 			<NombreProducto>Telegrama</NombreProducto>
-			<PrecioProducto>Desde 6,22 €</PrecioProducto>
+			<PrecioProducto>6,22 €</PrecioProducto>
 			<DescripcionProducto>El envío online reúne todas las características del telegrama tradicional, pero con la comodidad que conlleva internet. Mismo plazo de entrega e incluso misma validez legal que los enviados por teléfono o desde las oficinas.</DescripcionProducto>
-			<Ambito>Nacional e Internacional</Ambito>
+			<Ambito>nacional e internac.</Ambito>
 			<Operativa>La entrega se realiza: en el domicilio del destinatario, en oficinas de Referencia o en la oficina elegida</Operativa>
 			<Imagen>img/64x64-tu-sello.png</Imagen>
 			<PlazoEntrega>24H</PlazoEntrega>
@@ -159,9 +159,9 @@
 		<cProducto>
 			<id>prod15</id>
 			<NombreProducto>Tu Sello</NombreProducto>
-			<PrecioProducto>Desde 9,25€</PrecioProducto>
+			<PrecioProducto>9,25€</PrecioProducto>
 			<DescripcionProducto>Este servicio te permite transformar imágenes en sellos reales de Correos. Haga exclusivos sus envíos de marketing directo o sus comunicaciones personales. El diseño se envía de forma online.</DescripcionProducto>
-			<Ambito>Nacional</Ambito>
+			<Ambito>nacional</Ambito>
 			<Operativa>Se te comunicará por correo electrónico la aceptación o no de la imagen. En caso de no ser aceptada se procederá a la devolución del importe. Una vez producido el pedido, el envío al destinatario se realizará mediante un servicio postal de máxima urgencia.</Operativa>
 			<Imagen>img/64x64-tu-sello.png</Imagen>
 			<PlazoEntrega>24H</PlazoEntrega>

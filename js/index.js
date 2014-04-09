@@ -29,10 +29,15 @@ var app = {
 
         var products = app.hojaProductos.chojaProductos.Producto.cProducto;
 
+        //Template de lista
         var template = _.template($('#productList-template').html(), {productList : products});
         $('#productosList').html(template);
         self.refreshGroups(products.length);
         $("#productosList").listview().listview('refresh');
+
+        //Template de detalle
+        var templateDetalle = _.template($('#productDetail-template').html(), {productDetail : products});
+        $('#detalle').html(templateDetalle);
 
 
         var alturaDocument = $( document ).height();
@@ -155,12 +160,10 @@ var app = {
         });
 
         /*Botones info*/
-        /*$("#btnInfo14").on("vclick",function(){
+        $("#btnInfo0").on("vclick",function(){
             self.showDetail();
-            $('html, body').animate({
-                scrollTop: $("#tuSello").offset().top
-            }, 2000);
-        });*/
+            $('#detalle').scrollTo(500);
+        });
 
         document.addEventListener('deviceready', function(){
             console.log("Received Event: deviceready");
