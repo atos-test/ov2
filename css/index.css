@@ -109,8 +109,9 @@ h1 {
 #containerDetalle1{
     /*margin-top: 5%;*/
     height: 100% !important;
-    width: 100% !important;
+    width: 96% !important;
     overflow: hidden !important;
+	padding-left: 2%;
 }
 
 #containerDetalle2{
