@@ -2,6 +2,7 @@ var app = {
     
     hojaProductos: null,
     fichero : "hojaProductos.xml",
+    products : null,
 
     initialize: function() {
         var self = app;
@@ -27,16 +28,16 @@ var app = {
 
         $("#containerDetalle1").hide();
 
-        var products = app.hojaProductos.chojaProductos.Producto.cProducto;
+        self.products = app.hojaProductos.chojaProductos.Producto.cProducto;
 
         //Template de lista
-        var template = _.template($('#productList-template').html(), {productList : products});
+        var template = _.template($('#productList-template').html(), {productList : self.products});
         $('#productosList').html(template);
-        self.refreshGroups(products.length);
+        self.refreshGroups(self.products.length);
         $("#productosList").listview().listview('refresh');
 
         //Template de detalle
-        var templateDetalle = _.template($('#productDetail-template').html(), {productDetail : products});
+        var templateDetalle = _.template($('#productDetail-template').html(), {productDetail : self.products});
         $('#detalle').html(templateDetalle);
 
 
@@ -81,13 +82,8 @@ var app = {
 
         /*Ancho Imagen es el 25% del controlGroup*/
         var anchoImg = (anchoControlGroupIzq - anchoControlGroupIzq*75/100);
-        $(".claseBurofax").height(anchoImg);
-        $(".claseCartaCertificada").height(anchoImg);
-        $(".claseFilatelia").height(anchoImg);
-        $(".clase4872").height(anchoImg);
-        $(".clasePostalExpres").height(anchoImg);
-        $(".claseTuSello").height(anchoImg);
-
+        self.setWidthImg(anchoImg);
+        
 
         /*Calculamos el tamaño de la letra en función del alto/ancho de la imagen*/
         var tamNombreProducto = anchoImg/100 + 0.1 + "em";
@@ -107,6 +103,14 @@ var app = {
         console.log("anchoControlGroupIzq-->", anchoControlGroupIzq);
         console.log("anchoControlGroupDer-->", anchoControlGroupDer);
         console.log("anchoImg-->", anchoImg);
+    },
+
+    setWidthImg: function(ancho){
+        var self = app;
+        for (var i = 0; i < self.products.length; i++) {
+            var fondoLista=".fondoLista"+i;
+            $(fondoLista).height(ancho);
+        };
     },
 
     showList: function(){
@@ -162,7 +166,7 @@ var app = {
         /*Botones info*/
         $("#btnInfo0").on("vclick",function(){
             self.showDetail();
-            $('#detalle').scrollTo(500);
+            $('body').scrollTo("#id0");
         });
 
         document.addEventListener('deviceready', function(){

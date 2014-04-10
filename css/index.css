@@ -171,40 +171,34 @@ h1 {
     height: 28px !important;
 }
 
-
-.claseBurofax{
+.fondoLista0, .fondoLista1, .fondoLista4, .fondoLista5, .fondoLista6, .fondoLista7, .fondoLista9, .fondoLista12{
     background: url('../img/64x64-burofax.png');
     background-size: 25% auto;
     background-repeat: no-repeat;
 }
-
-.claseCartaCertificada{
+.fondoLista2{
     background: url('../img/64x64-carta-certificada.png');
-    background-size: 25% 100%;
+    background-size: 25% auto;
     background-repeat: no-repeat;
 }
-
-.claseFilatelia{
+.fondoLista3{
     background: url('../img/64x64-filatelia.png');
-    background-size: 25% 100%;
+    background-size: 25% auto;
     background-repeat: no-repeat;
 }
-
-.clase4872{
+.fondoLista8{
     background: url('../img/64x64-postal-4872.png');
-    background-size: 25% 100%;
+    background-size: 25% auto;
     background-repeat: no-repeat;
 }
-
-.clasePostalExpres{
+.fondoLista10, .fondoLista11{
     background: url('../img/64x64-postal-expres.png');
-    background-size: 25% 100%;
+    background-size: 25% auto;
     background-repeat: no-repeat;
 }
-
-.claseTuSello{
+.fondoLista13, .fondoLista14{
     background: url('../img/64x64-tu-sello.png');
-    background-size: 25% 100%;
+    background-size: 25% auto;
     background-repeat: no-repeat;
 }
 
