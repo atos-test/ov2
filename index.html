@@ -29,7 +29,7 @@
         </script>
 <!-- LISTPAGE -->
         <div data-role="page" id="listPage" data-theme="e" >
-            <div data-theme="e" data-role="header" data-position="fixed" data-tap-toggle="false" >
+            <div id="divHeader" data-theme="e" data-role="header" data-position="fixed" data-tap-toggle="false" >
 				<div class="fondo-header">
 				</div>
 				
@@ -137,7 +137,9 @@
 
             <script type="text/template" id="productDetail-template" >
                 <% _.each(productDetail, function(producto,index) {%>
-                    <%  var idDiv="id"+index;
+                    <%  var first = 0;
+                        var last = productDetail.length-1;
+                        var idDiv="id"+index;
                         var fondo="";
                         switch(producto.id){
                             case "prod0":
@@ -164,7 +166,7 @@
                         }
                     %>
                     <div id="<%=idDiv%>" class="ui-corner-all custom-corners detalle-block">
-                            <a href="#" class="btn-detalle ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext ui-nodisc-icon"></a>
+                            <a name="btnAnt" class="<%=(index)==first?"ui-disabled" : "" %> btn-detalle ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext ui-nodisc-icon"></a>
                                 <div class="<%=fondo%> detalle ui-bar">
                                     <%=producto.NombreProducto%>
                                 </div>
@@ -185,7 +187,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            <a href="#" class="btn-detalle ui-btn ui-corner-all ui-icon-carat-d ui-btn-icon-notext ui-nodisc-icon"></a>
+                            <a name="btnSig" class="<%=(index)==last?"ui-disabled" : "" %> btn-detalle ui-btn ui-corner-all ui-icon-carat-d ui-btn-icon-notext ui-nodisc-icon"></a>
                         </div>
                     
                 <% }); %>

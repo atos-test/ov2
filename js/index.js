@@ -30,8 +30,8 @@ var app = {
 
         /*Si venimos de detalle, hacemos un scroll al inicio de la lista*/
 
-        self.products = app.hojaProductos.chojaProductos.Producto.cProducto;
 
+        self.products = app.hojaProductos.chojaProductos.Producto.cProducto;
         //Template de lista
         var template = _.template($('#productList-template').html(), {productList : self.products});
         $('#productosList').html(template);
@@ -128,6 +128,13 @@ var app = {
         $("#productosList").hide("slide");
         $("#containerDetalle1").show("slide");
     },
+
+    irA: function(destino){
+        console.log("Destino-->", destino);
+        _.delay(function(){
+            $.mobile.silentScroll(destino);
+        }, 500);
+    },
     
     bindEvents: function() {
         var self = app;
@@ -151,8 +158,10 @@ var app = {
         });
 		
 		$("#slider-vista").change(function(){
-			if ($(this).val()=="on")
+			if ($(this).val()=="on"){
 				self.showList();
+                self.irA($("#listPage").offset().top);
+            }
 			else
 				self.showDetail();
 		});
@@ -167,27 +176,57 @@ var app = {
 
         /*Botones info*/
         /*En función del botón que se pulse, se muestra el detalle correspondiente*/
-        var x = document.getElementsByName("btnInfo");
+        var btnInfo = document.getElementsByName("btnInfo");
 
-        $(x).each(function(index){
+        $(btnInfo).each(function(index){
             $(this).on("vclick",function(){
-                console.log("Pulsado: ", index);
                 self.showDetail();
 
                 /*Id del detalle al que hacer scroll*/
                 var id = "#id"+index;
 
-                
-
-                console.log("Scroll a ", id);
-
-                console.log("Offset-->", $(id).offset());
-
                 /*Damos un delay para que cargue todo y luego le aplicamos el scroll. Hay que quitarle el tamaño del header*/
+                var tamHeader = $("#divHeader").height() + 3 + 8;
+                console.log("tamHeader: ", tamHeader);
+                console.log("destino fuera funcion-->", $(id).offset().top - tamHeader);
                 _.delay(function(){
-                    $.mobile.silentScroll($(id).offset().top-55);
+                    $.mobile.silentScroll($(id).offset().top - tamHeader);
                 }, 500);
                 
+            });
+        });
+
+        /*Botones sig.*/
+        /*Al pulsar el boton sig. hacemos scroll al siguiente detalle*/
+        var btnSig = document.getElementsByName("btnSig");
+
+        $(btnSig).each(function(index){
+            $(this).on("vclick",function(){
+
+                /*Id del detalle al que hacer scroll*/
+                index++;
+                var id = "#id"+index;
+
+                /*Hay que quitarle el tamaño del header*/
+                var tamHeader = $("#divHeader").height() + 3 + 8;
+                $.mobile.silentScroll($(id).offset().top - tamHeader);
+            });
+        });
+
+        /*Botones ant.*/
+        /*Al pulsar el boton ant. hacemos scroll al anterior detalle*/
+        var btnAnt = document.getElementsByName("btnAnt");
+
+        $(btnAnt).each(function(index){
+            $(this).on("vclick",function(){
+                
+                /*Id del detalle al que hacer scroll*/
+                index--;
+                var id = "#id"+index;
+
+                /*Hay que quitarle el tamaño del header*/
+                var tamHeader = $("#divHeader").height() + 3 + 8;
+                $.mobile.silentScroll($(id).offset().top - tamHeader);
             });
         });
 
