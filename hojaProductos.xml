@@ -9,7 +9,7 @@
 			<Ambito>nacional e internac.</Ambito>
 			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
-			<PlazoEntrega>24H</PlazoEntrega>
+			<PlazoEntrega>24 h</PlazoEntrega>
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
@@ -20,7 +20,7 @@
 			<Ambito>nacional e internac.</Ambito>
 			<Operativa>Los envíos son depositados por el personal de Correos en el buzón del destinatario.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
-			<PlazoEntrega>Inmediato</PlazoEntrega>
+			<PlazoEntrega>inmediato</PlazoEntrega>
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
@@ -32,7 +32,7 @@
 			<Ambito>nacional e internac.</Ambito>
 			<Operativa>Entrega, en todo el territorio nacional, del 90% de los envíos en 1 día hábil</Operativa>
 			<Imagen>img/64x64-carta-certificada.png</Imagen>
-			<PlazoEntrega>24H</PlazoEntrega>
+			<PlazoEntrega>24 h</PlazoEntrega>
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
@@ -43,7 +43,7 @@
 			<Ambito>nacional e internac.</Ambito>
 			<Operativa>A través de esta página puede realizar su pedido de los productos filatélicos.</Operativa>
 			<Imagen>img/64x64-filatelia.png</Imagen>
-			<PlazoEntrega>24H</PlazoEntrega>
+			<PlazoEntrega>24 h</PlazoEntrega>
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
@@ -54,7 +54,7 @@
 			<Ambito>nacional</Ambito>
 			<Operativa>Entrega, en todo el territorio nacional, del 93% de los envíos en 3 días hábiles.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
-			<PlazoEntrega>3 días hábiles</PlazoEntrega>
+			<PlazoEntrega>3 días háb.</PlazoEntrega>
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
@@ -65,7 +65,7 @@
 			<Ambito>nacional y Andorra</Ambito>
 			<Operativa>Se admite en oficinas o en puntos de admisión masiva con la modalidad de contrato.Circula registrado.Se entrega bajo firma en el domicilio.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
-			<PlazoEntrega>4-5 días hábiles</PlazoEntrega>
+			<PlazoEntrega>4-5 días háb.</PlazoEntrega>
 			<Login>false</Login>
 		</cProducto>
 		<cProducto>
@@ -76,7 +76,7 @@
 			<Ambito>internac.</Ambito>
 			<Operativa>La entrega se realizará bajo firma en el domicilio del destinatario. La admisión se realiza en oficinas.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
-			<PlazoEntrega>8-10 días hábiles</PlazoEntrega>
+			<PlazoEntrega>8-10 días háb.</PlazoEntrega>
 			<Login>false</Login>
 		</cProducto>
 		<cProducto>
@@ -87,7 +87,7 @@
 			<Ambito>internac.</Ambito>
 			<Operativa>La admisión se realiza en oficinas. La entrega se efectúa en el domicilio del destinatario.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
-			<PlazoEntrega>Depende del destino</PlazoEntrega>
+			<PlazoEntrega>depende destino</PlazoEntrega>
 			<Login>false</Login>
 		</cProducto>
 		<cProducto>
@@ -98,7 +98,7 @@
 			<Ambito>nacional</Ambito>
 			<Operativa>La entrega se realiza: en el domicilio del destinatario, en oficinas de Referencia o en la oficina elegida</Operativa>
 			<Imagen>img/64x64-postal-4872.png</Imagen>
-			<PlazoEntrega>48H</PlazoEntrega>
+			<PlazoEntrega>48 h</PlazoEntrega>
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
@@ -109,7 +109,7 @@
 			<Ambito>nacional e internac.</Ambito>
 			<Operativa>Circulan en sobre blanco de doble ventana y se entregan por el personal de Correos en el buzón del destinatario.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
-			<PlazoEntrega>Inmediato</PlazoEntrega>
+			<PlazoEntrega>inmediato</PlazoEntrega>
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
@@ -120,7 +120,7 @@
 			<Ambito>internac.</Ambito>
 			<Operativa>Entrega bajo firma en el domicilio o la oficina del destinatario.</Operativa>
 			<Imagen>img/64x64-postal-expres.png</Imagen>
-			<PlazoEntrega>Depende del destino</PlazoEntrega>
+			<PlazoEntrega>depende destino</PlazoEntrega>
 			<Login>false</Login>
 		</cProducto>
 		<cProducto>
@@ -131,7 +131,7 @@
 			<Ambito>nacional y Andorra</Ambito>
 			<Operativa>La entrega se realiza: en el domicilio del destinatario, en oficinas de Referencia o en la oficina elegida</Operativa>
 			<Imagen>img/64x64-postal-expres.png</Imagen>
-			<PlazoEntrega>24H</PlazoEntrega>
+			<PlazoEntrega>24 h</PlazoEntrega>
 			<Login>false</Login>
 		</cProducto>
 		<cProducto>
@@ -142,7 +142,7 @@
 			<Ambito>nacional e internac.</Ambito>
 			<Operativa>Se puede enviar un Burofax desde esta propia página web (documentos pdf de hasta 20 págs) o desde cualquier oficina de Correos, acudiendo con el documento que se desea enviar a través de este servicio.</Operativa>
 			<Imagen>img/64x64-burofax.png</Imagen>
-			<PlazoEntrega>24H</PlazoEntrega>
+			<PlazoEntrega>24 h</PlazoEntrega>
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
@@ -153,7 +153,7 @@
 			<Ambito>nacional e internac.</Ambito>
 			<Operativa>La entrega se realiza: en el domicilio del destinatario, en oficinas de Referencia o en la oficina elegida</Operativa>
 			<Imagen>img/64x64-tu-sello.png</Imagen>
-			<PlazoEntrega>24H</PlazoEntrega>
+			<PlazoEntrega>24 h</PlazoEntrega>
 			<Login>true</Login>
 		</cProducto>
 		<cProducto>
@@ -164,7 +164,7 @@
 			<Ambito>nacional</Ambito>
 			<Operativa>Se te comunicará por correo electrónico la aceptación o no de la imagen. En caso de no ser aceptada se procederá a la devolución del importe. Una vez producido el pedido, el envío al destinatario se realizará mediante un servicio postal de máxima urgencia.</Operativa>
 			<Imagen>img/64x64-tu-sello.png</Imagen>
-			<PlazoEntrega>24H</PlazoEntrega>
+			<PlazoEntrega>24 h</PlazoEntrega>
 			<Login>true</Login>
 		</cProducto>
 	</Producto>
