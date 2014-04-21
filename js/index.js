@@ -3,6 +3,7 @@ var app = {
     hojaProductos: null,
     fichero : "hojaProductos.xml",
     products : null,
+    indice: 0,
 
     initialize: function() {
         var self = app;
@@ -129,11 +130,14 @@ var app = {
         $("#containerDetalle1").show("slide");
     },
 
-    irA: function(destino){
-        console.log("Destino-->", destino);
-        _.delay(function(){
-            $.mobile.silentScroll(destino);
-        }, 500);
+    scrollEfecto: function(destino){
+        /*Scroll sin efecto*/
+        //$.mobile.silentScroll(destino);
+
+        /*Scroll con efecto*/
+        $('body').stop().animate({  
+            scrollTop: destino
+        }, 500); 
     },
     
     bindEvents: function() {
@@ -159,8 +163,12 @@ var app = {
 		
 		$("#slider-vista").change(function(){
 			if ($(this).val()=="on"){
+                /*Además de mostrar la lista, navegamos al inicio*/
 				self.showList();
-                self.irA($("#listPage").offset().top);
+                _.delay(function(){
+                    self.scrollEfecto($("#listPage").offset().top);
+                }, 500);
+                
             }
 			else
 				self.showDetail();
@@ -180,6 +188,8 @@ var app = {
 
         $(btnInfo).each(function(index){
             $(this).on("vclick",function(){
+
+                self.indice = index;
                 self.showDetail();
 
                 /*Id del detalle al que hacer scroll*/
@@ -187,10 +197,12 @@ var app = {
 
                 /*Damos un delay para que cargue todo y luego le aplicamos el scroll. Hay que quitarle el tamaño del header*/
                 var tamHeader = $("#divHeader").height() + 3 + 8;
-                console.log("tamHeader: ", tamHeader);
-                console.log("destino fuera funcion-->", $(id).offset().top - tamHeader);
+
+                console.log("id: ", $(id));
+                console.log("top: ",$(id).offset().top );
+
                 _.delay(function(){
-                    $.mobile.silentScroll($(id).offset().top - tamHeader);
+                    self.scrollEfecto($(id).offset().top - tamHeader);
                 }, 500);
                 
             });
@@ -203,13 +215,22 @@ var app = {
         $(btnSig).each(function(index){
             $(this).on("vclick",function(){
 
+                /*Si se trabaja con "index", acaba dando errores. 
+                Especialmente cuando hay varios "detalles" por pantalla*/
+                self.indice = index;
+                
                 /*Id del detalle al que hacer scroll*/
-                index++;
-                var id = "#id"+index;
+                self.indice++;
+
+                var id = "#id"+self.indice;
 
                 /*Hay que quitarle el tamaño del header*/
                 var tamHeader = $("#divHeader").height() + 3 + 8;
-                $.mobile.silentScroll($(id).offset().top - tamHeader);
+
+                console.log("id: ", $(id));
+                console.log("top: ",$(id).offset().top );
+
+                self.scrollEfecto($(id).offset().top - tamHeader);
             });
         });
 
@@ -219,14 +240,23 @@ var app = {
 
         $(btnAnt).each(function(index){
             $(this).on("vclick",function(){
-                
+
+                /*Si se trabaja con "index", acaba dando errores. 
+                Especialmente cuando hay varios "detalles" por pantalla*/
+                self.indice = index;
+
                 /*Id del detalle al que hacer scroll*/
-                index--;
-                var id = "#id"+index;
+                self.indice--;
+
+                var id = "#id"+self.indice;
 
                 /*Hay que quitarle el tamaño del header*/
                 var tamHeader = $("#divHeader").height() + 3 + 8;
-                $.mobile.silentScroll($(id).offset().top - tamHeader);
+
+                console.log("id: ", $(id));
+                console.log("top: ",$(id).offset().top );
+
+                self.scrollEfecto($(id).offset().top - tamHeader);
             });
         });
 
