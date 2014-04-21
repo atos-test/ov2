@@ -28,6 +28,8 @@ var app = {
 
         $("#containerDetalle1").hide();
 
+        /*Si venimos de detalle, hacemos un scroll al inicio de la lista*/
+
         self.products = app.hojaProductos.chojaProductos.Producto.cProducto;
 
         //Template de lista
@@ -164,9 +166,29 @@ var app = {
         });
 
         /*Botones info*/
-        $("#btnInfo0").on("vclick",function(){
-            self.showDetail();
-            $('body').scrollTo("#id0");
+        /*En función del botón que se pulse, se muestra el detalle correspondiente*/
+        var x = document.getElementsByName("btnInfo");
+
+        $(x).each(function(index){
+            $(this).on("vclick",function(){
+                console.log("Pulsado: ", index);
+                self.showDetail();
+
+                /*Id del detalle al que hacer scroll*/
+                var id = "#id"+index;
+
+                
+
+                console.log("Scroll a ", id);
+
+                console.log("Offset-->", $(id).offset());
+
+                /*Damos un delay para que cargue todo y luego le aplicamos el scroll. Hay que quitarle el tamaño del header*/
+                _.delay(function(){
+                    $.mobile.silentScroll($(id).offset().top-55);
+                }, 500);
+                
+            });
         });
 
         document.addEventListener('deviceready', function(){
