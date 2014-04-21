@@ -8,6 +8,16 @@ var app = {
     initialize: function() {
         var self = app;
         console.log("initialize");
+        switch(window.orientation) 
+        {  
+          case -90:
+          case 90:
+            console.log('landscape');
+            break; 
+          case 0:
+            console.log('portrait');
+            break; 
+        }
         self.loadXML();
         self.refreshView();
         self.bindEvents();
@@ -260,6 +270,26 @@ var app = {
             });
         });
 
+        window.onorientationchange = function() {
+          /*window.orientation returns a value that indicates whether iPhone is in portrait mode, landscape mode with the screen turned to the
+            left, or landscape mode with the screen turned to the right. */
+          var orientation = window.orientation;
+          switch(orientation) {
+            case 0:
+                self.refreshView();
+
+                break; 
+
+            case 90:
+                self.refreshView();
+                break;
+
+            case -90: 
+                self.refreshView();
+                break;
+          }
+        }
+
         document.addEventListener('deviceready', function(){
             console.log("Received Event: deviceready");
         }, false);
@@ -275,3 +305,4 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
