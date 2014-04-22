@@ -202,7 +202,7 @@
                         var fondoLista="fondoLista"+index;
                     %>
                     <li data-icon="false" class="liControlGroupClass">
-                        <div id="<%=idGroup%>" data-role="controlgroup" data-type="horizontal" class="controlGroupClass ui-body-c ui-controlgroup ui-controlgroup-horizontal ui-corner-all">
+                        <div id="<%=idGroup%>" name="controlGroupLista" data-role="controlgroup" data-type="horizontal" class="controlGroupClass ui-body-c ui-controlgroup ui-controlgroup-horizontal ui-corner-all">
                             <a data-role="button" id="<%=(producto.id)%>" class=" <%=fondoLista%> <%=(producto.Login)=="true"?"loginNecesario" : "" %> contenedorProducto btnControlGroupLeft">
                                 <div id="infoProducto">
                                     <label class="nombreProducto infoProducto"><%= producto.NombreProducto %></label>
