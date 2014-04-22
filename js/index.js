@@ -3,6 +3,7 @@ var app = {
     hojaProductos: null,
     fichero : "hojaProductos.xml",
     products : null,
+    indice: 0,
 
     initialize: function() {
         var self = app;
@@ -28,8 +29,10 @@ var app = {
 
         $("#containerDetalle1").hide();
 
-        self.products = app.hojaProductos.chojaProductos.Producto.cProducto;
+        /*Si venimos de detalle, hacemos un scroll al inicio de la lista*/
 
+
+        self.products = app.hojaProductos.chojaProductos.Producto.cProducto;
         //Template de lista
         var template = _.template($('#productList-template').html(), {productList : self.products});
         $('#productosList').html(template);
@@ -126,6 +129,16 @@ var app = {
         $("#productosList").hide("slide");
         $("#containerDetalle1").show("slide");
     },
+
+    scrollEfecto: function(destino){
+        /*Scroll sin efecto*/
+        //$.mobile.silentScroll(destino);
+
+        /*Scroll con efecto*/
+        $('body').stop().animate({  
+            scrollTop: destino
+        }, 500); 
+    },
     
     bindEvents: function() {
         var self = app;
@@ -149,8 +162,14 @@ var app = {
         });
 		
 		$("#slider-vista").change(function(){
-			if ($(this).val()=="on")
+			if ($(this).val()=="on"){
+                /*Además de mostrar la lista, navegamos al inicio*/
 				self.showList();
+                _.delay(function(){
+                    self.scrollEfecto($("#listPage").offset().top);
+                }, 500);
+                
+            }
 			else
 				self.showDetail();
 		});
@@ -164,10 +183,77 @@ var app = {
         });
 
         /*Botones info*/
-        $("#btnInfo0").on("vclick",function(){
-            self.showDetail();
-            $('body').scrollTo("#id0");
+        /*En función del botón que se pulse, se muestra el detalle correspondiente*/
+        var btnInfo = document.getElementsByName("btnInfo");
+
+        $(btnInfo).each(function(index){
+            $(this).on("vclick",function(){
+
+                self.indice = index;
+                self.showDetail();
+
+                /*Id del detalle al que hacer scroll*/
+                var id = "#id"+index;
+
+                /*Damos un delay para que cargue todo y luego le aplicamos el scroll. Hay que quitarle el tamaño del header*/
+                var tamHeader = $("#divHeader").outerHeight(true);
+
+                _.delay(function(){
+                    self.scrollEfecto($(id).offset().top - tamHeader);
+                }, 500);
+                
+            });
         });
+
+        /*Botones sig.*/
+        /*Al pulsar el boton sig. hacemos scroll al siguiente detalle*/
+        var btnSig = document.getElementsByName("btnSig");
+
+        $(btnSig).each(function(index){
+            $(this).on("vclick",function(){
+
+                /*Si se trabaja con "index", acaba dando errores. 
+                Especialmente cuando hay varios "detalles" por pantalla*/
+                self.indice = index;
+                
+                /*Id del detalle al que hacer scroll*/
+                self.indice++;
+
+                var id = "#id"+self.indice;
+
+                /*Hay que quitarle el tamaño del header*/
+                var tamHeader = $("#divHeader").outerHeight(true);
+
+                self.scrollEfecto($(id).offset().top - tamHeader);
+            });
+        });
+
+        /*Botones ant.*/
+        /*Al pulsar el boton ant. hacemos scroll al anterior detalle*/
+        var btnAnt = document.getElementsByName("btnAnt");
+
+        $(btnAnt).each(function(index){
+            $(this).on("vclick",function(){
+
+                /*Si se trabaja con "index", acaba dando errores. 
+                Especialmente cuando hay varios "detalles" por pantalla*/
+                self.indice = index;
+
+                /*Id del detalle al que hacer scroll*/
+                self.indice--;
+
+                var id = "#id"+self.indice;
+
+                /*Hay que quitarle el tamaño del header*/
+                var tamHeader = $("#divHeader").outerHeight(true);
+
+                self.scrollEfecto($(id).offset().top - tamHeader);
+            });
+        });
+
+        /*window.onorientationchange = function() {
+            self.refreshView();
+        }*/
 
         document.addEventListener('deviceready', function(){
             console.log("Received Event: deviceready");
@@ -184,3 +270,4 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
