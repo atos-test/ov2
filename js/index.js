@@ -79,7 +79,8 @@ var app = {
             self.calcularAlturaImgLista();
             
             /* Calculamos el número de bloques que se van a visualizar*/
-            self.bloquesDetalle(403);
+            /* Anteriormente habia 403, pero en pantallas de 800px de altura, el detalle sale demasiado largo*/
+            self.bloquesDetalle(370);
 
             /* Aplicamos la altura de cada detalle a su clase*/
             /* Aplicamos la altura de la info de cada detalle a su clase*/
@@ -242,10 +243,16 @@ var app = {
 
         $("#listPage").on("swipeleft", function(){
             self.showDetail();
+            _.delay(function(){
+                self.scrollEfecto($("#listPage").offset().top);
+            }, 500);
         });
 
         $("#listPage").on("swiperight", function(){
             self.showList();
+            _.delay(function(){
+                self.scrollEfecto($("#listPage").offset().top);
+            }, 500);
         });
 
         /*Botones info*/
