@@ -4,10 +4,23 @@ var app = {
     fichero : "hojaProductos.xml",
     products : null,
     indice: 0,
+    alturaDocument: 0,
+    anchoDocument: 0,
+    alturaHeader: 0,
+    alturaDetalle: 0,
 
     initialize: function() {
         var self = app;
         console.log("initialize");
+        self.alturaDocument = $(document).height();
+        self.anchoDocument = $(document).width();
+
+        console.log("alturaDocument-->", self.alturaDocument);
+
+        /*Sacamos la altura del div de dentro del header,
+        ya que este no se carga al principio, por tanto no da un valor correcto.
+        Añadimos los pixeles de los bordes, position y padding = 2+1+1*/
+        self.alturaHeader = $("#divHeader").height()+4;
         self.loadXML();
         self.refreshView();
         self.bindEvents();
@@ -28,6 +41,7 @@ var app = {
         var self = app;
 
         $("#containerDetalle1").hide();
+        self.products = app.hojaProductos.chojaProductos.Producto.cProducto;
 
         //Si estoy en LANDSCAPE cargo un template para detalle
         if(window.orientation == -90 || window.orientation == 90) {
@@ -37,46 +51,69 @@ var app = {
             self.templateLista();
 
             //Cargamos el template del detalle LANDSCAPE
-            //self.templateDetalleLandscape();
+            self.templateDetalleLandscape();
 
             //Calculamos la altura de la imagen en función del tipo de pantalla (480x800, 320x480..)
             //También se calcula el tamaño de la letra y el punto medio donde ubicar el boton info
             self.calcularAlturaImgLista();
+
+
+            /************PARTE DETALLE************/
+            
+            /* Calculamos el número de bloques que se van a visualizar*/
+            self.bloquesDetalle(268);
 
         }
         //Si estoy en PORTRAIT cargo los templates hechos anteriormente
         else{
 
-            self.products = app.hojaProductos.chojaProductos.Producto.cProducto;
-            
+            console.log("Estoy en portrait");
             //Cargamos el template de la lista
             self.templateLista();
 
             //Cargamos el template del detalle PORTRAIT
             self.templateDetallePortrait();
-
-
-            var alturaDocument = $( document ).height();
+            
             //Calculamos la altura de la imagen en función del tipo de pantalla (480x800, 320x480..)
             //También se calcula el tamaño de la letra y el punto medio donde ubicar el boton info
             self.calcularAlturaImgLista();
             
             /* Calculamos el número de bloques que se van a visualizar*/
-            var alturaDetalle = 403;
-            var nbloques = Math.floor((alturaDocument-48)/alturaDetalle);
-            
-            /* Para la altura adaptable de los bloques de detalle de producto */
-            console.log("alturaDocument: ", alturaDocument);
-            console.log("nbloques: ", nbloques);
-            
-            var alturaDetalle = (alturaDocument-48)/nbloques;
-            $(".detalle-block").height(alturaDetalle);
-            console.log("alturaDetalle: ", alturaDetalle);
-            $(".texto-servicio").height(alturaDetalle-88-154-83);
+            self.bloquesDetalle(403);
+
+            /* Aplicamos la altura de cada detalle a su clase*/
+            /* Aplicamos la altura de la info de cada detalle a su clase*/
+            $(".detalle-block").height(self.alturaDetalle);
+            $(".texto-servicio").height(self.alturaDetalle-88-154-83);
         }
     },
 
+    bloquesDetalle: function(valor){
+        var self = app;
+
+        self.alturaDetalle = valor;
+        var nbloques = Math.floor((self.alturaDocument-self.alturaHeader)/self.alturaDetalle);
+
+        console.log(self.alturaDocument,"-",self.alturaHeader,"/",self.alturaDetalle," = ", nbloques);
+        
+        /* Para la altura adaptable de los bloques de detalle de producto */
+        console.log("alturaDocument: ", self.alturaDocument);
+        console.log("nbloques: ", nbloques);
+        
+        self.alturaDetalle = (self.alturaDocument-self.alturaHeader)/nbloques;
+        console.log("alturaDetalle: ", self.alturaDetalle);
+    },
+
+    actualizarAltoAncho: function(){
+        var self = app;
+
+        var aux = self.alturaDocument;
+        self.alturaDocument = self.anchoDocument;
+        self.anchoDocument = aux;
+    },
+
     templateLista: function(){
+        console.log("Cargo template Lista PORTRAIT/LANDSCAPE");
         var self = app;
         //Template de lista
         var template = _.template($('#productList-template').html(), {productList : self.products});
@@ -86,7 +123,16 @@ var app = {
     },
 
     templateDetallePortrait: function(){
+        console.log("Cargo template detalle PORTRAIT");
         var self = app;
+        //Template de detalle
+        var templateDetalle = _.template($('#productDetail-template').html(), {productDetail : self.products});
+        $('#detalle').html(templateDetalle);
+    },
+
+    templateDetalleLandscape: function(){
+        console.log("Cargo template detalle LANDSCAPE");
+         var self = app;
         //Template de detalle
         var templateDetalle = _.template($('#productDetail-template').html(), {productDetail : self.products});
         $('#detalle').html(templateDetalle);
@@ -163,7 +209,6 @@ var app = {
     
     bindEvents: function() {
         var self = app;
-        console.log("bindEvents");
 
         $('a.loginNecesario').on("vclick", function(){
             console.log("Pulsado");
@@ -217,10 +262,8 @@ var app = {
                 var id = "#id"+index;
 
                 /*Damos un delay para que cargue todo y luego le aplicamos el scroll. Hay que quitarle el tamaño del header*/
-                var tamHeader = $("#divHeader").outerHeight(true);
-
                 _.delay(function(){
-                    self.scrollEfecto($(id).offset().top - tamHeader);
+                    self.scrollEfecto($(id).offset().top - self.alturaHeader);
                 }, 500);
                 
             });
@@ -243,9 +286,7 @@ var app = {
                 var id = "#id"+self.indice;
 
                 /*Hay que quitarle el tamaño del header*/
-                var tamHeader = $("#divHeader").outerHeight(true);
-
-                self.scrollEfecto($(id).offset().top - tamHeader);
+                self.scrollEfecto($(id).offset().top - self.alturaHeader);
             });
         });
 
@@ -266,13 +307,12 @@ var app = {
                 var id = "#id"+self.indice;
 
                 /*Hay que quitarle el tamaño del header*/
-                var tamHeader = $("#divHeader").outerHeight(true);
-
-                self.scrollEfecto($(id).offset().top - tamHeader);
+                self.scrollEfecto($(id).offset().top - self.alturaHeader);
             });
         });
 
         window.onorientationchange = function() {
+            self.actualizarAltoAncho();
             self.refreshView();
         }
 

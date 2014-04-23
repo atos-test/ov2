@@ -256,17 +256,17 @@ h1 {
 }
 
 .fondo-tusello {
-	background: url('../img/480x240-correos-fondo3.jpg');
+	background: url('../img/detalle-fondo-sello.jpg');
 	background-size: 100%;
 }
 
 .fondo-paqinteco {
-	background: url('../img/480x240-correos-fondo2.jpg');
+	background: url('../img/detalle-fondo-internacional.jpg');
 	background-size: 100%;
 }
 
 .fondo-burofax {
-	background: url('../img/480x240-correos-fondo.jpg');
+	background: url('../img/detalle-fondo-fax.jpg');
 	background-size: 100%;
 }
 
