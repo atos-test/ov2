@@ -237,8 +237,12 @@ var app = {
                 }, 500);
                 
             }
-			else
+			else{
 				self.showDetail();
+                _.delay(function(){
+                    self.scrollEfecto($("#listPage").offset().top);
+                }, 500);
+            }
 		});
 
         $("#listPage").on("swipeleft", function(){
