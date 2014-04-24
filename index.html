@@ -135,6 +135,16 @@
 
 <!--Template detalle-->
 
+            <script type="text/template" id="productDetailLandscape-template" >
+                <% _.each(productDetail, function(producto,index) {%>
+                    
+                    <div class="ui-corner-all custom-corners">
+                            <%=index%>
+                    </div>
+                    
+                <% }); %>
+            </script>
+
             <script type="text/template" id="productDetail-template" >
                 <% _.each(productDetail, function(producto,index) {%>
                     <%  var first = 0;

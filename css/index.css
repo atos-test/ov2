@@ -106,7 +106,7 @@ h1 {
     padding-right: 2%;
 }
 
-#containerDetalle1{
+#containerDetalle1, #containerDetalleLandscape{
     /*margin-top: 5%;*/
     height: 100% !important;
     width: 96% !important;

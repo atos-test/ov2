@@ -45,48 +45,62 @@ var app = {
 
         //Si estoy en LANDSCAPE cargo un template para detalle
         if(window.orientation == -90 || window.orientation == 90) {
+
             console.log("Estoy en landscape");
 
-            //Cargamos el template de la lista
-            self.templateLista();
-
-            //Cargamos el template del detalle LANDSCAPE
-            self.templateDetalleLandscape();
-
-            //Calculamos la altura de la imagen en función del tipo de pantalla (480x800, 320x480..)
-            //También se calcula el tamaño de la letra y el punto medio donde ubicar el boton info
-            self.calcularAlturaImgLista();
-
-
-            /************PARTE DETALLE************/
-            
-            /* Calculamos el número de bloques que se van a visualizar*/
-            self.bloquesDetalle(268);
+            self.cargaLandscape();
 
         }
         //Si estoy en PORTRAIT cargo los templates hechos anteriormente
         else{
 
             console.log("Estoy en portrait");
-            //Cargamos el template de la lista
-            self.templateLista();
-
-            //Cargamos el template del detalle PORTRAIT
-            self.templateDetallePortrait();
             
-            //Calculamos la altura de la imagen en función del tipo de pantalla (480x800, 320x480..)
-            //También se calcula el tamaño de la letra y el punto medio donde ubicar el boton info
-            self.calcularAlturaImgLista();
-            
-            /* Calculamos el número de bloques que se van a visualizar*/
-            /* Anteriormente habia 403, pero en pantallas de 800px de altura, el detalle sale demasiado largo*/
-            self.bloquesDetalle(370);
-
-            /* Aplicamos la altura de cada detalle a su clase*/
-            /* Aplicamos la altura de la info de cada detalle a su clase*/
-            $(".detalle-block").height(self.alturaDetalle);
-            $(".texto-servicio").height(self.alturaDetalle-88-154-83);
+            self.cargaPortrait();
         }
+    },
+
+    cargaLandscape: function(){
+        var self = app;
+
+        //Cargamos el template de la lista
+        self.templateLista();
+
+        //Cargamos el template del detalle LANDSCAPE
+        self.templateDetalleLandscape();
+
+        //Calculamos la altura de la imagen en función del tipo de pantalla (480x800, 320x480..)
+        //También se calcula el tamaño de la letra y el punto medio donde ubicar el boton info
+        self.calcularAlturaImgLista();
+
+
+        /************PARTE DETALLE************/
+        
+        /* Calculamos el número de bloques que se van a visualizar*/
+        self.bloquesDetalle(268);
+    },
+
+    cargaPortrait: function(){
+        var self = app;
+
+        //Cargamos el template de la lista
+        self.templateLista();
+
+        //Cargamos el template del detalle PORTRAIT
+        self.templateDetallePortrait();
+        
+        //Calculamos la altura de la imagen en función del tipo de pantalla (480x800, 320x480..)
+        //También se calcula el tamaño de la letra y el punto medio donde ubicar el boton info
+        self.calcularAlturaImgLista();
+        
+        /* Calculamos el número de bloques que se van a visualizar*/
+        /* Anteriormente habia 403, pero en pantallas de 800px de altura, el detalle sale demasiado largo*/
+        self.bloquesDetalle(370);
+
+        /* Aplicamos la altura de cada detalle a su clase*/
+        /* Aplicamos la altura de la info de cada detalle a su clase*/
+        $(".detalle-block").height(self.alturaDetalle);
+        $(".texto-servicio").height(self.alturaDetalle-88-154-83);
     },
 
     bloquesDetalle: function(valor){
@@ -135,7 +149,7 @@ var app = {
         console.log("Cargo template detalle LANDSCAPE");
          var self = app;
         //Template de detalle
-        var templateDetalle = _.template($('#productDetail-template').html(), {productDetail : self.products});
+        var templateDetalle = _.template($('#productDetailLandscape-template').html(), {productDetail : self.products});
         $('#detalle').html(templateDetalle);
     },
 
@@ -187,8 +201,8 @@ var app = {
     showList: function(){
 		$("#slider-vista").val( "on" );
 		$("#slider-vista").slider( "refresh" );
-        $("#containerDetalle1").hide("slide");
         $("#productosList").show("slide");
+        $("#containerDetalle1").hide("slide");
     },
 
     showDetail: function(){
@@ -324,7 +338,21 @@ var app = {
 
         window.onorientationchange = function() {
             self.actualizarAltoAncho();
-            self.refreshView();
+            //Si estoy en LANDSCAPE cargo un template para detalle
+            if(window.orientation == -90 || window.orientation == 90) {
+
+                console.log("Estoy en landscape");
+
+                self.cargaLandscape();
+
+            }
+            //Si estoy en PORTRAIT cargo los templates hechos anteriormente
+            else{
+
+                console.log("Estoy en portrait");
+                
+                self.cargaPortrait();
+            }
         }
 
         document.addEventListener('deviceready', function(){
